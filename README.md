@@ -1,6 +1,30 @@
-📘 DSA Journey \n\n
-Welcome to my Data Structures and Algorithms Journey 🚀
-This repository contains hand-picked problems from platforms like LeetCode, solved with clarity and efficiency. Each problem includes:
+# 📘 DSA Journey
+
+Welcome to my **Data Structures and Algorithms Journey** 🚀  
+This repository contains hand-picked problems from platforms like **LeetCode**, solved with clarity and efficiency.
+
+## 📌 What's Inside?
+
+Each folder focuses on a specific topic or pattern, and contains:
+- ✅ Clean Java implementations  
+- ✅ Problem statement and approach (in comments or markdown)  
+- ✅ Code optimized for readability and performance
+
+## 🧠 Topics Covered So Far
+
+- 🔍 **Linear Search**  
+- 🔎 **Binary Search**  
+- 📈 **Search in Rotated Sorted Arrays**  
+- 🔁 **2D Matrix Search**
+
+## 🔄 Upcoming Patterns
+
+- 🎯 Two Pointers  
+- 📏 Sliding Window  
+- 📊 Prefix Sum  
+- 🔁 Binary Search on Answer  
+- 🧩 Bit Manipulation  
+
 
 ✅ Java code
 
@@ -8,17 +32,10 @@ This repository contains hand-picked problems from platforms like LeetCode, solv
 
 🧠 Explanation and patterns used
 
-✅ Completed Topics
-🔍 Linear Search
-📌 Linear Search in 2D Array
 Problem:
-Find the coordinates of a given key in a 2D array using linear search. Return [-1, -1] if not found.
-
+# Find the coordinates of a given key in a 2D array using linear search. Return [-1, -1] if not found.
 Java Code:
 
-java
-Copy
-Edit
 static int[] LinearSearch(int[][] myArray, int key) {
     int row = myArray.length;
     int column = myArray[0].length;
