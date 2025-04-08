@@ -92,6 +92,37 @@ int[][] arr = {
     {12, 13, 15}
 };
 
+
+## 🔎 Binary Search
+
+Problem:
+Given a sorted array, find the index of a target element using Binary Search. Return -1 if the target is not found.
+
+Java Code:    
+
+    static int binarySearch(int[] myArray, int key) {
+    int low = 0;
+    int high = myArray.length - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (myArray[mid] == key) {
+            return mid;
+        } else if (myArray[mid] < key) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+    return -1;
+}
+Example:
+
+int[] arr = {1, 3, 4, 6, 7, 8, 9, 12, 13, 33, 44, 45, 65, 78, 90};
+int result = binarySearch(arr, 12); // Output: 7
+Time Complexity: O(log n)
+Space Complexity: O(1)
+
 int[] result = linearSearch(arr, 9);  // Output: [1, 1]
 Time Complexity: O(n × m)
 Space Complexity: O(1)
