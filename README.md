@@ -178,3 +178,63 @@ int[] result = linearSearch(arr, 9);  // Output: [1, 1]
 ### Time Complexity: O(n × m)
 ### Space Complexity: O(1)
 
+
+## 🧮 Search in 2D Matrix (Row-wise Binary Search)
+Problem:
+You're given a 2D matrix where each row is sorted in ascending order, but columns are not guaranteed to be sorted.
+Your task is to determine whether a target value exists in the matrix.
+
+Approach:
+Since each row is sorted:
+
+Loop through each row.
+
+If the target lies between the first and last element of that row → apply binary search.
+
+Return true if found.
+
+Java Code:
+
+
+
+    public class BinarySearch {
+    static int binarySearch(int[] myArray, int key) {
+        int low = 0, high = myArray.length - 1;
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+            if (myArray[mid] == key) return mid;
+            else if (myArray[mid] < key) low = mid + 1;
+            else high = mid - 1;
+        }
+        return -1;
+    }
+
+    static boolean searchMatrix(int[][] matrix, int target) {
+        for (int i = 0; i < matrix.length; i++) {
+            // Check if target is within this row's range
+            if (target >= matrix[i][0] && target <= matrix[i][matrix[i].length - 1]) {
+                int value = binarySearch(matrix[i], target);
+                if (value != -1) return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[][] matrix = {
+            {1, 3, 10},
+            {5, 9, 12},
+            {13, 15, 18}
+        };
+
+        System.out.println(searchMatrix(matrix, 9));  // Output: true
+    }
+    }
+
+Time Complexity:
+
+### Worst case: O(m * log n) where m = number of rows, n = columns per row
+
+### Space Complexity:
+
+O(1) (no extra space used)
