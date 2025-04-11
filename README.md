@@ -238,3 +238,61 @@ Time Complexity:
 ### Space Complexity:
 
 O(1) (no extra space used)
+
+## ✅ Max Count of Positive and Negative Numbers
+📌 Problem:
+Given a sorted integer array nums, return the maximum between the count of positive and negative numbers.
+(0 is neither positive nor negative.)
+
+🔍 Approach:
+Use Binary Search to find:
+
+Lower bound of the first non-negative number (i.e., index of first >= 0)
+
+Upper bound of the last zero (i.e., index of last <= 0)
+
+The counts:
+
+Negative Count = index of lower bound of 0
+
+Positive Count = total elements - index of upper bound
+
+Return the maximum of both counts
+
+### ⏱️ Time Complexity:
+O(log n)
+
+### 🧠 Space Complexity:
+O(1)
+
+
+📄 Java Code:  
+[View Java Solution →](./arrays/ArraysSearch/MaximumCountMinAndMax.java)
+
+
+## ✅ Minimum Common Value in Two Sorted Arrays
+📌 Problem:
+Given two sorted arrays, find the smallest common element between them.
+If no common element exists, return -1.
+
+🔍 Approach:
+Use the Two Pointer technique:
+
+Start both pointers at the beginning of each array.
+
+Compare elements:
+
+If equal → return it (as it's the smallest match)
+
+If one is smaller → move that pointer forward
+
+### ⏱️ Time Complexity:
+O(n + m) for arrays of length n and m
+
+### 🧠 Space Complexity:
+O(1)
+
+📄 Java Code:
+View Java Solution →
+
+
