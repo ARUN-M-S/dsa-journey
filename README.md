@@ -329,4 +329,40 @@ Keep looping until found.
 [🔗 View Java Solution →](./arrays/ArraysSearch/GuessNumber.java)
 
 
+## 🔁 Find Minimum in Rotated Sorted Array (with Duplicates)
+Problem:
+You're given a rotated sorted array that may contain duplicates. Your task is to find the minimum element.
+
+Example Input:
+
+int[] arr = {10, 10, 10, 1, 10}; // 🔁 Rotation and duplicates
+Expected Output:
+
+1
+Approach:
+
+Use binary search.
+
+If arr[low] == arr[mid] == arr[high], it’s ambiguous — safely reduce the range by low++ and high--.
+
+Else:
+
+If arr[mid] > arr[high], minimum lies in the right half.
+
+Otherwise, it lies in the left half (including mid).
+
+📄 **Java Code:**  
+ [🔗 FindMinimumInRotatedArrayWithDuplicates.java](./arrays/ArraysSearch/FindMinimumInRotatedArrayWithDuplicates.java)
+
+### Time Complexity:
+
+Worst Case: O(n) — due to duplicates.
+
+### Space Complexity:
+
+O(1) — constant space.
+
+
+
+
 
