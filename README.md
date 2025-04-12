@@ -292,7 +292,41 @@ O(n + m) for arrays of length n and m
 ### 🧠 Space Complexity:
 O(1)
 
-📄 Java Code:
-View Java Solution →
+## ✅ Guess Number Higher or Lower
+
+📌 **Problem:**  
+You are playing a game where you need to guess a number picked by another player between `1` and `n`.  
+You get feedback from the API:
+
+- `-1` → Your guess is **higher** than the target  
+- `1` → Your guess is **lower** than the target  
+- `0` → Your guess is **correct**
+
+---
+
+🔍 **Approach:**
+
+Use **Binary Search** to minimize the number of guesses:
+
+- Start with `low = 1` and `high = n`
+- Calculate `mid = low + (high - low) / 2`
+- Use the `guess(mid)` API to check:
+
+  - If `0`: You found the number → return `mid`  
+  - If `-1`: Target is smaller → move `high = mid - 1`  
+  - If `1`: Target is larger → move `low = mid + 1`
+
+Keep looping until found.
+
+---
+
+### ⏱️ **Time Complexity:** O(log n)  
+### 🧠 **Space Complexity:** O(1)
+
+---
+
+📄 **Java Code:**  
+[🔗 View Java Solution →](./arrays/ArraysSearch/GuessNumber.java)
+
 
 
