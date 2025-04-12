@@ -12,6 +12,9 @@ public class GuessNumber {
         }
         return low;
     }
+    static int guess(int numb){
+        return 1;
+    }
   public static void main(String[] args) {
    int n =10;
       int result = guessNumber(n);
