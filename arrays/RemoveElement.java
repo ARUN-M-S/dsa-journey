@@ -14,7 +14,8 @@ public class RemoveElement {
 
         System.out.println( Arrays.toString( nums));
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
+          
        remove(new int [] {3,2,2,3},3);
     }
 }
