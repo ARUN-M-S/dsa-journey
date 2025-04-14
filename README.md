@@ -363,6 +363,41 @@ Worst Case: O(n) — due to duplicates.
 O(1) — constant space.
 
 
+# 🗳️ Moore's Voting Algorithm in Java
+
+This project implements **Moore's Voting Algorithm** in Java to efficiently find the **majority element** (an element that appears more than ⌊n/2⌋ times) in a given integer array.
+
+---
+
+## 🚀 Features
+
+- ✅ Linear time complexity: **O(n)**
+- ✅ Constant space complexity: **O(1)**
+- ✅ Includes verification step to confirm if the candidate is truly a majority
+- 🧠 Based on the classic algorithm by **Boyer and Moore**
+
+---
+
+## 📌 Problem Statement
+
+> Given an array of integers `nums`, find the element that appears more than ⌊n/2⌋ times. If no such element exists, return `-1`.
+
+---
+
+## 📦 Example
+📄 **Java Code:**  
+ [🔗 FindMinimumInRotatedArrayWithDuplicates.java](./arrays/MooreVotingAlgo.java)
+
+
+```java
+Input:  [1, 1, 2, 2, 3, 1, 2, 3, 2, 3, 3, 2, 2]
+Output: -1
+
+
+
+
+
+
 
 
 
