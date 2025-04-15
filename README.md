@@ -392,12 +392,86 @@ This project implements **Moore's Voting Algorithm** in Java to efficiently find
 ```java
 Input:  [1, 1, 2, 2, 3, 1, 2, 3, 2, 3, 3, 2, 2]
 Output: -1
+```
 
 
+# 🚀 Singly Linked List Implementation in Java
 
+This project contains a custom implementation of a **Singly Linked List** in Java with basic operations such as insertion, deletion, searching, reversing, and finding the middle element.
 
+---
 
+## 📂 Structure
+### Class: `SLList`
+Represents a singly linked list with the following features:
 
+---
 
+## ✅ Implemented Operations
+
+### 🔹 `insertAtbegining(int data)`
+Inserts a new node with the given data at the beginning of the list.
+
+### 🔹 `insertAtEnd(int data)`
+Appends a new node with the given data to the end of the list.
+
+### 🔹 `insertAtPosition(int data, int pos)`
+Inserts a new node at the specified position (0-based index). If the position is out of range, it displays a message.
+
+### 🔹 `deleteFromBeginning()`
+Deletes the node at the beginning of the list.
+
+### 🔹 `deleteFromEnd()`
+Deletes the node at the end of the list.
+
+### 🔹 `deleteFromPostion(int pos)`
+Deletes the node at the specified position.
+
+### 🔹 `search(int value)`
+Searches the list for a node with the specified value. Returns `true` if found, otherwise `false`.
+
+### 🔹 `reverseList()`
+Reverses the entire linked list.
+
+### 🔹 `findMiddle()`
+Finds and prints the **middle element** of the list using the **slow-fast pointer approach**.
+
+### 🔹 `printdata()`
+Prints the entire linked list in the format:  
+`data1 ---> data2 ---> ... ---> null`
+
+---
+
+## 🧪 How to Run
+
+1. Open the project in your IDE or terminal.
+2. Run the `SLList` class's `main` method.
+3. You can test different operations by uncommenting relevant method calls in the `main()`.
+
+---
+
+## 💻 Example Output
+```text
+54--->3--->5--->32--->33--->null
+5
+54--->3--->5--->32--->33--->null
+```
+🛠️ To Be Implemented
+✅ Nth Node from End
+
+✅ Count of Nodes
+
+✅ Detect Loop
+
+✅ Remove Duplicates
+
+✅ Merge Two Sorted Lists
+
+✅ Sort Linked List
+
+✅ Find Intersection Point
+
+📎 Note
+This is a beginner-friendly implementation focused on understanding linked list operations step by step. Ideal for practice and interview preparation.
 
 
