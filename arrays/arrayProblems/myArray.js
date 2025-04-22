@@ -11,4 +11,30 @@ function multiplicationTable(num){
         console.log(`${i} X ${num} = ` , num*i)
     }
 }
-multiplicationTable("kfdj")
+
+
+function sumOfNaturalNumebrs(n){
+    return n*(n+1)/2
+}
+
+function swapTwoVariable(a,b){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    return [a,b]
+}
+
+
+function closeNumber(n,m){
+    if(n%m ==0) return n;
+
+  let lower = n-(n%m);
+  let higher = lower+m;
+
+  if(n%m >m/2){
+return higher;
+  }else{
+      return lower
+  }
+
+}
