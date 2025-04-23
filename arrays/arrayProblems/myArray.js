@@ -38,3 +38,25 @@ return higher;
   }
 
 }
+
+
+//  2623. Memoize
+function memoize(fn) {
+    let cache = {}
+    return function(...args) {
+        let keys = JSON.stringify(args)
+        if( keys in cache){
+            return cache[keys]
+        }else{
+     cache[keys] = fn(...args)
+      return cache[keys]
+        }
+        
+    }
+}
+const fn = memmoise()
+
+console.log(fn([1,2]))
+console.log(fn([2,2]))
+console.log(fn([1,2]))
+
