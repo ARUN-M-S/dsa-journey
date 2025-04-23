@@ -54,9 +54,31 @@ function memoize(fn) {
         
     }
 }
-const fn = memmoise()
+// const fn = memmoise()
 
-console.log(fn([1,2]))
-console.log(fn([2,2]))
-console.log(fn([1,2]))
+// Input: arr[] = [1, 2, 3]
+// Output: [ [1], [1, 2], [2], [1, 2, 3], [2, 3], [3] ]
 
+
+//Input = arr[] = [1,[2,[3,[4],5],6],7]
+// Output = [1,2,3,4,5,6,7]
+
+//Recursive method
+function flatArray(arr){
+    return arr.reduce((acc,num)=> Array.isArray(num) ? acc.concat(flatArray(num)) : acc.concat(num),[])
+}
+
+function flatArrayByloop(arr){
+    let result =[];
+    for(let key of arr){
+        if(Array.isArray(key)){
+            result=result.concat(flatArrayByloop(key))
+        }else{
+           result= result.concat(key)
+        }
+    }
+    return result
+}
+
+console.log(flatArray([1,[2,[3,[4],5],6],7]));
+console.log(flatArrayByloop([1,[2,[3,[4],5],6],7]));
