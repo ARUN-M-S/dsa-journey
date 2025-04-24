@@ -475,3 +475,9 @@ Prints the entire linked list in the format:
 This is a beginner-friendly implementation focused on understanding linked list operations step by step. Ideal for practice and interview preparation.
 
 
+## 📦 Lodash Utilities
+This section includes re-implemented Lodash utility functions for learning and mastery.
+
+### [🔹chunk](./loadash-utilities/_chunk.js)
+
+
