@@ -478,6 +478,6 @@ This is a beginner-friendly implementation focused on understanding linked list 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
 
-### [🔹chunk](./loadash-utilities/_chunk.js)
+### [🔹chunk](./lodash-utilities/_chunk.js)
 
 
