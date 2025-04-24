@@ -479,5 +479,5 @@ This is a beginner-friendly implementation focused on understanding linked list 
 This section includes re-implemented Lodash utility functions for learning and mastery.
 
 ### [🔹chunk](./lodash-utilities/_chunk.js)
-
+### [🔹compact](./lodash-utilities/_compact.js)
 
