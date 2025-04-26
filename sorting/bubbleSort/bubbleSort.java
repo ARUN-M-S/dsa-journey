@@ -14,10 +14,10 @@ public class bubbleSort {
                 arr[j+1]=temp;
                 alredySorted= false;
             }
-            System.out.println(Arrays.toString(arr)   +" One iteration Completed");
+            // System.out.println(Arrays.toString(arr)   +" One iteration Completed");
         }
         if(alredySorted) break;
-        // System.out.println(Arrays.toString(arr)   +" One iteration Completed");
+         System.out.println(Arrays.toString(arr)   +" One iteration Completed");
     }
 
     System.out.println(Arrays.toString(arr)   + " after");
