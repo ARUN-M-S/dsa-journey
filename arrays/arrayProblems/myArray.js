@@ -121,3 +121,62 @@ console.log(findPeak([6, 5, 4, 3, 2, 1]));           // Peak is 6
 console.log(findPeak([1, 2, 1]));                    // Peak is 2
 console.log(findPeak([5, 10, 20, 15, 7]));            // Peak is 20
 console.log(findPeak([5, 10, 20, 15, 7]));            // Peak is 20
+
+
+
+function flattem(obj,path,result={}){
+   if(typeof obj!=='object' || obj ==null) return result[path] =obj;
+   console.log(obj);
+  for(const key of Object.keys(obj)){
+
+    let fullPath = path ? `${path}.${key}` : key
+    console.log(fullPath,"full path");
+      if(typeof obj[key] =='object'){
+ flattem(obj[key],fullPath,result)
+      }else{
+        result[fullPath] = obj[key]
+      }
+  }
+  return result
+
+}
+
+function flattenObject(obj, path = '', result = {}) {
+    if (obj !== Object(obj)) {
+        result[path] = obj;
+        return result;
+    }
+
+    for (const [key, value] of Object.entries(obj)) {
+        flattenObject(value, path ? `${path}.${key}` : key, result);
+    }
+
+    return result;
+}
+
+
+let obj = {"a":null,b:{c:undefined}} 
+
+console.log(flattenObject(obj));
+
+// expect(received).toEqual(expected) // deep equality
+
+// Expected: {"a.b": 1}
+
+
+function groupAnagram(arr1){
+    if(!Array.isArray(arr1) || arr1.length ==0) return false;
+    let frequencyCounter = {};
+    for(let word of arr1){
+        let sortedWord =  word.split('').sort().join()
+        if(frequencyCounter[sortedWord]){
+            frequencyCounter[sortedWord].push(word)
+        }else{
+            frequencyCounter[sortedWord] = [word]
+        }
+    }
+    console.log(frequencyCounter);
+    return Object.values(frequencyCounter)
+}
+
+// console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"])); 
