@@ -164,19 +164,23 @@ console.log(flattenObject(obj));
 // Expected: {"a.b": 1}
 
 
-function groupAnagram(arr1){
-    if(!Array.isArray(arr1) || arr1.length ==0) return false;
-    let frequencyCounter = {};
-    for(let word of arr1){
-        let sortedWord =  word.split('').sort().join()
-        if(frequencyCounter[sortedWord]){
-            frequencyCounter[sortedWord].push(word)
-        }else{
-            frequencyCounter[sortedWord] = [word]
-        }
-    }
-    console.log(frequencyCounter);
-    return Object.values(frequencyCounter)
-}
+// function groupAnagram(arr1){
+//     if(!Array.isArray(arr1) || arr1.length ==0) return false;
+//     let frequencyCounter = {};
+//     for(let word of arr1){
+//         let sortedWord =  word.split('').sort().join()
+//         if(frequencyCounter[sortedWord]){
+//             frequencyCounter[sortedWord].push(word)
+//         }else{
+//             frequencyCounter[sortedWord] = [word]
+//         }
+//     }
+//     console.log(frequencyCounter);
+//     return Object.values(frequencyCounter)
+// }
 
-// console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"])); 
+ console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"])); 
+
+//  output =[ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
+
+
