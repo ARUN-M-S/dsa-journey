@@ -179,8 +179,29 @@ console.log(flattenObject(obj));
 //     return Object.values(frequencyCounter)
 // }
 
- console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"])); 
+//  console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"])); 
 
 //  output =[ [ 'eat', 'tea', 'ate' ], [ 'tan', 'nat' ], [ 'bat' ] ]
 
+
+
+
+// function objMethod(data){
+
+//   return Object.fromEntries( Object.entries(data).filter(([key,val]) => typeof val =='string'))
+  
+// }
+
+// function objMethod2(data){
+
+//     return  Object.values(data).filter(val => typeof val ==='number').reduce((val,acc) => acc+val ,0)
+    
+//   }
+
+//   function objMethod3(data){
+//       return Object.entries(data).reduce(([key,val],acc) => console.log(val))
+//   }
+
+// //   Sum all numeric values in an object
+// console.log(objMethod3({ a: 10, b: "hello", c: 5 }));
 
