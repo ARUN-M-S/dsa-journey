@@ -137,18 +137,32 @@ class doubliLinkedList {
         let currentTail = this.tail;
         while(currentHead && currentTail && currentHead!=currentTail && currentHead.prev !=currentTail){
             if(currentHead.value==value) return currentHead;
-             if(currentTail.value==value) return currentTail;
-            
+            if(currentTail.value==value) return currentTail;
                 currentHead= currentHead.next;
                 currentTail= currentTail.prev;
             
         }
         if (currentHead && currentHead.value === value) return currentHead;
-
         return -1;
+    }
 
+    reverse() {
+        if (!this.head) return undefined;
 
+        let current = this.head;
+        let temp = null;
 
+        while(current){
+            temp = current.prev;
+            current.prev = current.next;
+            current.next=temp;
+            current= current.prev;
+        }
+
+        temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+        return this
     }
 
 }
