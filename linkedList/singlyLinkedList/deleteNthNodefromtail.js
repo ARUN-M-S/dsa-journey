@@ -48,7 +48,25 @@ class singlyLinkedList {
        }
 
        slow.next=slow.next.next
+       this.length--;
        return this.head;
+    }
+
+
+    findTheMiddle(){
+        let fast = this.head;
+        let slow=this.head;
+     
+
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next;
+           
+           
+        }
+
+        return slow;
+
     }
 }
 
