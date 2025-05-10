@@ -13,3 +13,6 @@ maxSum = Math.max(sum,maxSum);
 
 return maxSum/k
 }
+
+
+//IP = [-3,2,5,6,18,49,22,45], k =5
