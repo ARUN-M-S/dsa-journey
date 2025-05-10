@@ -4,3 +4,6 @@ function findCommonPrefix(str1,str2){
     let length = gcd(str1.length,str2.length);
     return str1.slice(0,length)
 }
+
+// IP ABCABCABC,   ABCABC  OP  ABC
+// IP ABABABABAB , ABAB OP AB
