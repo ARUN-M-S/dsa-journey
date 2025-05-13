@@ -3,14 +3,16 @@ var removeStars = function(s) {
     let right =0;
     let result =[]
 
-    while(right<s.length){
-       if(s[right]!='*'){
-           result.push(s[right])
+    for(let ch of s){
+       if(ch!='*'){
+           result.push(ch)
        }else{
            result.pop()
        }
-       right++
+    //    right++x
     }
+
+    console.log(result);
 
     return result.join('')
 };
