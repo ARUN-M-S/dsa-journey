@@ -7,7 +7,7 @@ var maxFrequencyElements = function(nums) {
     }
     let sorted = Object.values(freqMap).sort((a,b)=>b-a);
     
-    console.log(,"sorted");
+    // console.log(,"sorted");
 };
 
 maxFrequencyElements([1,2,2,3,1,4])
