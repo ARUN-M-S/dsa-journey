@@ -1,15 +1,14 @@
 var plusOne = function(digits) {
-    let value = digits.join('');
-    console.log(value);
-    value= Number(value)+1;
+    let value = BigInt(digits.join(''));;
+    value += 1n;
     console.log(value);
     let result =[];
-    while(value>0){
-    result.unshift(Math.floor(value%10));
-    value = Math.floor(value/10);
+    while(value>0n){
+    result.unshift(Number(value%10n));
+    value = value/10n;
     }
     return result
 };
 
 
-console.log(plusOne([1,2,3]));
+console.log(plusOne([6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3]));
