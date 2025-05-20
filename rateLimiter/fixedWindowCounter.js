@@ -1,25 +1,26 @@
 const rateLimiter = {};
 
 function isAllowed(userId) {
-    const currentTime = Math.floor(Date.now() / 1000);
-    const windowSize = 60;
+    const curretTime = Math.floor(Date.now() / 1000);
     const limit = 5;
-    const windowStart = Math.floor(currentTime / windowSize) * windowSize
+    const windowSize = 60;
+    windowStart = Math.floor(curretTime / windowSize) * windowSize;
+
     if (!rateLimiter[userId]) {
-        rateLimiter[userId] = { windowStart, count: 1 }
+        rateLimiter[userId] = { windowStart, count: 1 };
         return true;
     }
 
-    const entry = rateLimiter[userId];
-
-    if(entry.windowStart==windowStart){
-        if(entry.count<limit){
+    let entry = rateLimiter[userId];
+    if (entry.windowStart == windowStart) {
+        if (entry.count < limit) {
             entry.count++;
             return true;
-        }else{
-            return false;
+        } else {
+            return false
         }
-    }else{
+
+    } else {
         rateLimiter[userId] = { windowStart, count: 1 };
         return true;
     }
@@ -29,5 +30,4 @@ function isAllowed(userId) {
 // Simulate requests
 for (let i = 0; i < 10; i++) {
     console.log(`Request ${i + 1}:`, isAllowed("user123"));
-  }
-  
+}
