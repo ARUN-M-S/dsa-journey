@@ -1,21 +1,16 @@
 
  var strStr = function(haystack, needle) {
 
-    let i =0;
-    let j =0;
-    while(i<haystack.length && j<needle.length){
-        if(haystack[i]==needle[j]){
+    if(needle=="") return -1;
+ 
+    for(let i =0;i<haystack.length-needle.length;i++){
+        let j =0;
+        while(j<needle.length && haystack[i+j] ==needle[j]){
             j++;
-        }else{
-            j=0;
         }
-        i++
+        if(j==needle.length) return i;
     }
-    if(j==needle.length){
-        return i-needle.length;
-    }else{
-        return -1;
-    }
+    return -1
     
 };
 
@@ -23,3 +18,7 @@ let  haystack = "sadbutsad";
  let needle = "sad"
  console.log(strStr(haystack,needle))
  
+
+ let x= "mississippi"
+ let y =  "issip"
+ console.log(strStr(x,y))
