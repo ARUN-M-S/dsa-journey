@@ -1,43 +1,42 @@
 class Node{
     constructor(val){
-        this.value = val;
-        this.left = null;
-        this.right= null;
+        this.val = val;
+        this.left=null;
+        this.right=null;
     }
 }
 
-class BTS{
+class BST{
     constructor(){
-        this.root= null;
+        this.root=null;
     }
-
     insert(val){
-        let newNode = new Node(val);
+        let newNode = new Node(val); 
         if(!this.root){
+          
             this.root=newNode;
             return this;
+
         }else{
             let current = this.root;
-            while(true){
-                if(val==current.val) return undefined;
-                if(val<current.value){
-                    if(!current.left){
-                        current.left= newNode;
-                        return this; 
+           while(true){
+               if(val == current.val) return undefined;
+               if(val<current.val){
+                    if(current.left==null){
+                        current.left = newNode;
+                        return this;
                     }else{
-                        current = current.left;
+                        current=current.left
                     }
-
-                }else{
-                    if(!current.right){
-                        current.right= newNode;
-                        return this; 
-                    }else{
-                        current = current.right;
-                    }
-
-                }
-            }
+               }else if (val>current.val){
+                   if(current.right ==null){
+                       current.right=newNode;
+                       return this;
+                   }else{
+                       current=current.right;
+                   }
+               }
+           }
         }
     }
 }
