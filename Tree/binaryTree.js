@@ -50,6 +50,19 @@ class BST{
         }
         return false;
     }
+    BFS(){
+        let node = this.root;
+        let data=[];
+        let queue= [];
+        queue.push(node);
+        while(queue.length){
+            node= queue.shift();
+            data.push(node.val)
+            if(node.right)queue.push(node.right);
+            if(node.left)queue.push(node.left)
+        }
+        return data;
+    }
 }
 
 let tree = new BST();
@@ -57,8 +70,9 @@ tree.insert(5)
 tree.insert(4)
 tree.insert(8)
 tree.insert(10)
+
 console.log(tree);
-console.log(tree.find(11))
+console.log(tree.BFS())
 
 
 
