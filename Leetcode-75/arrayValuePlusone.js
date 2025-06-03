@@ -1,17 +1,19 @@
 function sum(arr){
-    let temp = arr.join('');
-    let result =[]
-      temp= Number(temp)+1;
-      while (temp!=0) {
-        result.push(Math.floor(temp%10));
-        temp = Math.floor(temp/10)
-      }
-     
-      return result.reverse();
-
+   let i = arr.length-1;
+   while(i>=0){
+       if(arr[i]<9){
+           arr[i]++;
+           return arr;
+       }
+       arr[i]=0;
+       i--;
+   }
+arr.unshift(1);
+return arr;
 
 
 }
 
 
 console.log(sum([1,2,3]))
+console.log(sum([9,9,9]))
