@@ -1,6 +1,14 @@
 function removeDuplicates(arr) {
-    // your code here
-    console.log(new Set(arr));
+  let frqMap = {};
+  let result =[]
+  for(let val of arr){
+      if(!frqMap[val]){
+        result.push(val);
+        frqMap[val]=val;
+      } 
   }
-  removeDuplicates([1, 2, 2, 3, 4, 4])
+  return result;
+  }
+  console.log(  removeDuplicates([1, 2, 2, 3, 4, 4]))
+
   removeDuplicates([true,false,true])
