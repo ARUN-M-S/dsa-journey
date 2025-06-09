@@ -1,14 +1,31 @@
 function removeDuplicates(arr) {
-  let frqMap = {};
-  let result =[]
-  for(let val of arr){
-      if(!frqMap[val]){
+    // your code here
+    let frqMap = new Map();
+    let result = [];
+    for (let val of arr) {
+      if (!frqMap.get(val)) {
         result.push(val);
-        frqMap[val]=val;
+      
       } 
+      frqMap.set(val,((frqMap.get(val)||0)+1))
+    // frqMap.set(val,val)
+    }
+    console.log(frqMap);
+    return result;
   }
-  return result;
-  }
-  console.log(  removeDuplicates([1, 2, 2, 3, 4, 4]))
+  console.log( removeDuplicates([
+    null,
+    undefined,
+   null,
+   undefined,
+  ]))
+ 
 
-  removeDuplicates([true,false,true])
+  console.log( removeDuplicates([
+    true,
+    false,
+   false,
+   undefined,
+  ]))
+ 
+
