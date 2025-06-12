@@ -1,4 +1,4 @@
-let arr = [2, 4, 8, 9, 7, 10];
+let arr = [2, 4, 8, 9, 7, 10,10];
 
 function secondLargest(arr) {
     if (!Array.isArray(arr) || arr.length <= 1) return -1;
@@ -8,7 +8,7 @@ function secondLargest(arr) {
         if (arr[i] > largest) {
             secondLarge = largest;
             largest = arr[i]
-        } else if (arr[i] > secondLarge) {
+        } else if (arr[i] > secondLarge && arr[i]!=largest) {
             secondLarge = arr[i]
         }
     }
