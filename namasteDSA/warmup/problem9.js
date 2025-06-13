@@ -1,5 +1,5 @@
 function palindrome(n){
-    if(n<0) return 'Not a Palindrome'
+    if(n<0) return false;
     let reverse=0;
     let temp= n;
     while(temp!=0){
@@ -7,8 +7,7 @@ function palindrome(n){
         temp=Math.floor(temp/10);
     }
 
-    if(reverse==n) return 'Palindrome';
-    else return 'Not a Palindrome'
+    return reverse==n;
 }
 
-console.log(palindrome(0))
+console.log(palindrome(101))
