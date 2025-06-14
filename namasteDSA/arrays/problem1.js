@@ -14,6 +14,6 @@ function removeDuplicates(arr) {
         }
     }
     console.log(arr);
-    return left;
+    return left+1;
 }
 console.log(removeDuplicates(arr))
