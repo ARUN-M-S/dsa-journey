@@ -14,5 +14,5 @@ function moveZeros(arr) {
 }
 
 let arr1= [0,0,1,3,0,2,4];
-let arr2= [1,2,3,40,5,0,0,0]
+let arr2= [0,0,0,0]
 console.log(moveZeros(arr2))
