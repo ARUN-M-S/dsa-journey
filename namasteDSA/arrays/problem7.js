@@ -5,9 +5,9 @@ function maxConcicutiveOnes(arr){
     for(let nums of arr){
         if(nums==1){
             count++; 
-            if(count>maxCount){
-                maxCount=count;
-            }
+          
+                maxCount=math.max(maxCount,count)
+         
         }else{
            
                 count=0;
