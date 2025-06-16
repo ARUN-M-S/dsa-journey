@@ -1,8 +1,6 @@
 function fibnociNumber(n){
     let sum =0;
     let prev = 0;
-
-
     for(let i =0;i<=n;i++){
         if(i<=1){
             sum+=i;
@@ -15,5 +13,9 @@ function fibnociNumber(n){
     return sum;
   
 }
+function fib(n){
+    if(n<=1)return n;
 
-console.log(fibnociNumber(5))
+    return fib(n-1)+fib(n-2)
+}
+console.log(fib(7))
