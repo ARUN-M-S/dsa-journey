@@ -9,4 +9,4 @@ function clean(str) {
 }
 
 console.log(palindrome('malayalam'))
-console.log(palindrome('malaylam'))
+console.log(palindrome(clean("A man, a plan, a canal: Panama")))
