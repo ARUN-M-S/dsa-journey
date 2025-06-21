@@ -42,4 +42,13 @@ class SL{
         }
         return temp
     }
+    get(value){
+        if(!this.head) return false;
+        let temp = this.head;
+        while(temp){
+            if(temp.val==value) return true;
+            temp=temp.next
+        }
+        return false;
+    }
 }
