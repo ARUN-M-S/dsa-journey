@@ -51,4 +51,16 @@ class SL{
         }
         return false;
     }
+    getNodeWithIndex(index){
+        if(!this.head)return undefined;
+        if(index<0 || index >this.size) return undefined;
+
+        let temp = this.head;
+        let currentIndex=0;
+        while(currentIndex<index){
+            temp=temp.next;
+            currentIndex++;
+        }
+        return temp;
+    }
 }
