@@ -115,4 +115,30 @@ class SL{
         this.size++;
         return this
     }
+
+    findMid(){
+        if(!this.head ) return undefined;
+
+        let temp = this.head;
+        let prev= this.head;
+
+        while(temp&&temp.next){
+            prev= prev.next;
+            temp=temp.next.next
+        }
+        return prev;
+    }
+    reverse(){
+        let prev=null;
+        let temp = this.head;
+        let current=this.head;
+        while(temp){
+            current.next=prev;
+            prev=current;
+            current=temp.next;
+            temp=temp.next
+        }
+        this.head=temp;
+        return this
+    }
 }
