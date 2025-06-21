@@ -92,4 +92,27 @@ class SL{
         }
         return temp;
     }
+
+    insert(index,val){
+        if(index<0 || index>this.size) return undefined;
+        let newNode = new Node(val);
+       if(index==0){
+            newNode.next=this.head;
+            this.head=newNode;
+          
+        }else{
+            let temp = this.head;
+            let prev= null;
+            let count=0;
+            while(count<index){
+                prev= temp;
+                temp=temp.next;
+                count++;
+            }
+            prev.next=newNode;
+            newNode.next=temp;
+        }
+        this.size++;
+        return this
+    }
 }
