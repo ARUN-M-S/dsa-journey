@@ -1,3 +1,5 @@
+const { runInThisContext } = require("vm");
+
 class Node{
     constructor(val){
         this.val=val;
@@ -60,6 +62,33 @@ class SL{
         while(currentIndex<index){
             temp=temp.next;
             currentIndex++;
+        }
+        return temp;
+    }
+    delete(index){
+   
+        if(!this.head|| index<0 || index >=this.size ) return undefined;
+
+        let temp = this.head;
+        let prev = null
+        let currentIndex=0;
+         if(index==0){
+             this.head = temp.next;
+             this.size--
+         }else{
+        while(currentIndex<index){
+            prev= temp
+            temp=temp.next;
+            currentIndex++;
+        }
+             prev.next=temp.next;
+             temp.next=null;
+             this.size--;
+
+             
+         }
+         if(this.size==0){
+            this.head= null
         }
         return temp;
     }
