@@ -1,7 +1,14 @@
 function findlength(s){
-    s= s.trim();
+    let n = s.length-1;
+    while(n){
+        if(s[n]==" "){
+            n--
+        }else{
+            break
+        }
+    }
     let count=0;
-    for(let i=s.length-1;i>=0;i++){
+    for(let i=n;i>=0;i++){
         if(s[i]!=" "){
             count++
         }else{
