@@ -1,14 +1,18 @@
 var isIsomorphic = function(s, t) {
     if(s.length!==t.length) return false;
-   let obj = {}
-    s=s.split('');
-    for(let i =0;i<s.length;i++){
-        obj[s[i]] = t[i]
-    }
-    for(let i =0;i<s.length;i++){
-        s[i] = obj[s[i]]
-    }
+   let maptot = {}
+   let maptos = {}
 
-     return s.join('')==t;
+   
+    for(let i =0;i<s.length;i++){
+     if(!maptot[s[i]] &&!maptos[t[i]]){
+        maptot[s[i]]=t[i]
+        maptos[t[i]]=s[i]
+
+     }else if(maptot[s[i]]!=t[i]) return false;
+    }
+ 
+
+     return true;
     
 };
