@@ -21,3 +21,15 @@ let tMap=Array(26).fill(0);
     }
     return -1;
 };
+
+
+var findTheDifference2 = function(s, t) {
+    if(s==t) return 'No difference'
+    let sum =0;
+
+    for(let i=0;i<t.length;i++){
+       sum+=t[i].charCodeAt();
+       if(i<s.length)sum-=s[i].charCodeAt();
+    }
+    return String.fromCharCode(sum)
+};
