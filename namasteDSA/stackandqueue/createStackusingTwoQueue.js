@@ -61,3 +61,44 @@ MyStack.prototype.empty = function() {
  * var param_3 = obj.top()
  * var param_4 = obj.empty()
  */
+
+
+
+ MyStack.prototype.push = function(x) {
+    this.q1.push(x)
+};
+
+/**
+ * @return {number}
+ */
+MyStack.prototype.pop = function() {
+    let n = this.q1.length-1;
+    for(let i =0;i<n;i++){
+        this.q1.push(this.q1.shift())
+       
+    }
+    let ans = this.q1.shift();
+    return ans
+};
+
+/**
+ * @return {number}
+ */
+MyStack.prototype.top = function() {
+     let n = this.q1.length-1;
+      let num ;
+    for(let i =0;i<=n;i++){
+      num = this.q1.shift()
+        this.q1.push(num)
+        
+    }
+    return num;
+};
+
+/**
+ * @return {boolean}
+ */
+MyStack.prototype.empty = function() {
+    let n = this.q1.length;
+    return n==0 
+};
