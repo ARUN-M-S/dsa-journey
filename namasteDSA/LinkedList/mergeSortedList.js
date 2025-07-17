@@ -27,13 +27,13 @@
 //     }
 //     if(!list1){
 //          current.next=list2;
-        
+
 //     }else{
 //          current.next=list1;
 //     }
-    
+
 //     return sentinal.next;
-    
+
 // };
 
 /**
@@ -47,24 +47,24 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
- var swapPairs = function(head) {
-    if(!head || !head.next) return head;
-    let dummy= new ListNode();
-    dummy.next=head;
-    p=dummy;
+var swapPairs = function (head) {
+    if (!head || !head.next) return head;
+    let dummy = new ListNode();
+    dummy.next = head;
+    p = dummy;
     // p.next=head;
-    c=head;
-    n=c.next
+    c = head;
+    n = c.next
 
-while(c && n){
-    p.next=n;
-    c.next=n.next;
-    n.next=c;
+    while (c && n) {
+        p.next = n;
+        c.next = n.next;
+        n.next = c;
 
-    p=c;
-    c=p.next;
-    n=c&&c.next
-}
+        p = c;
+        c = p.next;
+        n = c && c.next
+    }
 
 
     // while(curr && curr.next){
@@ -73,5 +73,5 @@ while(c && n){
     //     curr.next.val=temp;
     //     curr=curr.next.next;
     // }
-    return dummy.next ; 
+    return dummy.next;
 };
