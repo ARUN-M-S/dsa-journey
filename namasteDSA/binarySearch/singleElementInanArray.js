@@ -8,7 +8,7 @@ var singleNonDuplicate = function (nums) {
             if ((r - m + 1) % 2 == 0) {
                 r = m - 1
             } else {
-                l = m + 1
+                l = m + 2
             }
 
         } else if (nums[m] == nums[m - 1]) {
