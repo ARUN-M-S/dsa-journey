@@ -4,7 +4,10 @@ var searchRange = function(nums, target) {
     let arr =[-1,-1]
     while(l<r){
         let m = l+Math.floor((r-l)/2);
-        if(nums[m]<target){
+        if(nums[m]==target){
+arr[0] = m
+        }
+        else if(nums[m]<target){
             l=m+1
         }else{
             r=m

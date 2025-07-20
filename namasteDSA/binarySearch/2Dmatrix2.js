@@ -11,8 +11,6 @@ var searchMatrix = function(matrix, target) {
         }else{
             r++
         }
-
     }
     return false;
-    
 };
