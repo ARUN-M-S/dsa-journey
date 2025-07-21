@@ -4,7 +4,7 @@ var twoSum = function(nums, target) {
 
     for(let i =0;i<=n;i++){
         let diff = target-nums[i]
-        if(obj[nums[i]]>=0){
+        if(obj.hasOwnProperty(nums[i])){
             return [obj[nums[i]],i]
         }
         obj[diff]=i
