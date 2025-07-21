@@ -4,10 +4,10 @@ var findClosestElements = function(arr, k, x) {
     while(l<r){
         let m = l+Math.floor((r-l)/2)
         if((arr[m+k]-x) < (x-arr[m])){
-           r=m
-            
+         
+           l=m+1
         }else{
-            l=m+1
+            r=m
         }
     }
     return arr.slice(l,l+k)
