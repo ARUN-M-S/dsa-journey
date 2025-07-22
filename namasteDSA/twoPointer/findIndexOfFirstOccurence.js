@@ -3,15 +3,18 @@
  * @param {string} needle
  * @return {number}
  */
- var strStr = function(s, t) {
-    let i =0;
-   let j =0;
-   while(i<s.length&&j<t.length){
-       if(s[i]==t[j]){
-           j++;
-       }
-       i++
-   }
-   return j==t.length ? i-t.length :-1;
-   
+ var strStr = function (haystack, needle) {
+    let m = haystack.length;
+    let n = needle.length;
+    for (let i = 0; i <= m - n; i++) {
+        let j = 0
+        for (j = 0; j < n; j++) {
+            if (haystack[i + j] != needle[j]) {
+                break
+            }
+        }
+        if (j == n) return i;
+    }
+    return -1;
+
 };
