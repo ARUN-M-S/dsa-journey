@@ -2,7 +2,10 @@ var threeSum = function(nums) {
     nums.sort((a,b)=>a-b);
     let ans =[];
     for(let i =0;i<nums.length;i++){
-        twoSum(nums,i,ans)
+        if(nums[i]!=nums[i-1]){
+            twoSum(nums,i,ans)
+        }
+       
     }
 };
 
@@ -17,8 +20,9 @@ var threeSum = function(nums) {
         let sum = nums[left] + nums[right] +nums[x];
 
         if (sum == 0) {
-            ans.push([left+1,right+1,x])
-            left++; right--
+            ans.push([left+1,right+1,x]);
+            left++; right--;
+            while(left<right && nums[left]==nums[left-1])i++
         } else if (sum > 0) {
             right--;
 
