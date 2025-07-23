@@ -7,6 +7,7 @@ var threeSum = function(nums) {
         }
        
     }
+    return ans;
 };
 
 
