@@ -21,9 +21,9 @@ var threeSum = function(nums) {
         let sum = nums[left] + nums[right] +nums[x];
 
         if (sum == 0) {
-            ans.push([left+1,right+1,x]);
+            ans.push([ nums[left],nums[right],nums[x]]);
             left++; right--;
-            while(left<right && nums[left]==nums[left-1])i++
+            while(left<right && nums[left]==nums[left-1])left++
         } else if (sum > 0) {
             right--;
 
