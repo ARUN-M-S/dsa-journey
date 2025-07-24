@@ -13,4 +13,12 @@ var trap = function(arr) {
       maxR[i]=min
   }
 
+  let sum =0;
+    for(let i =0;i<arr.length;i++){
+        let min = Math.min(maxL[i],maxR[i])
+        sum+= (min-arr[i])
+    }
+    return sum;
+
+
 }
