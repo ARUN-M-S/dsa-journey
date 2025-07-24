@@ -10,9 +10,6 @@ var threeSum = function(nums) {
     return ans;
 };
 
-
-
-
  var twoSum = function (nums,x, ans) {
     let left = x+1;
     let right = nums.length - 1;
