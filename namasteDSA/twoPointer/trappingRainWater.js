@@ -13,15 +13,10 @@
         maxR[n-i-1] =Math.max(maxR[n-i],arr[n-i-1])
     }
 
- 
-
     let sum =0;
     for(let i =0;i<arr.length;i++){
         let min = Math.min(maxL[i],maxR[i])
         sum+= (min-arr[i])
     }
     return sum;
-
-
-    
 };
