@@ -7,8 +7,9 @@ var characterReplacement = function (s, k) {
     while (j < s.length) {
         if (windowValid(map, k)) {
             max= Math.max(max,(j-i+1));
-            map[s[j]]=(map[s[j]]||0)+1;
             j++
+            map[s[j]]=(map[s[j]]||0)+1;
+          
         }else{
             map[s[i]]=--map[s[i]];
             i++
