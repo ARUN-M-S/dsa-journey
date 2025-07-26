@@ -4,7 +4,7 @@
  * @return {boolean}
  */
  var checkInclusion = function (s1, s2) {
-    
+    if(s1.length>s2.length) return false;
     let arr1 = Array(26).fill(0)
     let arr2 = Array(26).fill(0)
 
