@@ -15,6 +15,8 @@ Each folder focuses on a specific topic or pattern and contains:
 ## Array
  ### [🔹 Remove Duplicates from Sorted Array(leetcode No 26)](./namasteDSA/arrays/problem1.js)
 
+  ### [🔹 Remove Element(leetcode No 27)](./namasteDSA/arrays/problem2.js)
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
