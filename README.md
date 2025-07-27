@@ -23,6 +23,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Merge Sorted Array(leetcode No 88)](./namasteDSA/arrays/problem5.js)
 
+### [🔹 Move Zeroes(leetcode No 283)](./namasteDSA/arrays/problem6.js)
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
