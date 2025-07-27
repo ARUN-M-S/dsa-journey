@@ -21,6 +21,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Best Time to Buy and Sell Stock(leetcode No 121)](./namasteDSA/arrays/problem4.js)
 
+### [🔹 Merge Sorted Array(leetcode No 88)](./namasteDSA/arrays/problem5.js)
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
