@@ -13,7 +13,7 @@ Each folder focuses on a specific topic or pattern and contains:
 ✅ Code optimized for readability and performance
 
 ## Array
- [Remove Duplicates from Sorted Array(leetcode No 26)](./namasteDSA/arrays/problem1.js)
+ ### [🔹 Remove Duplicates from Sorted Array(leetcode No 26)](./namasteDSA/arrays/problem1.js)
 
 
 ## 📦 Lodash Utilities
