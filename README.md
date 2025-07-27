@@ -19,6 +19,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Reverse String(leetcode No 344)](./namasteDSA/arrays/problem3.js)
 
+### [🔹 Best Time to Buy and Sell Stock(leetcode No 121)](./namasteDSA/arrays/problem4.js)
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
