@@ -12,6 +12,9 @@ Each folder focuses on a specific topic or pattern and contains:
 ✅ Problem statement and approach (in comments or markdown)
 ✅ Code optimized for readability and performance
 
+## Array
+ Remove Duplicates from Sorted Array(leetcode No 26) (./namasteDSA/arrays/problem1.js)
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
