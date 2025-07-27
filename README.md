@@ -25,7 +25,7 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Move Zeroes(leetcode No 283)](./namasteDSA/arrays/problem6.js)
 
-### [🔹  Max Consecutive Ones(leetcode No 485)](./namasteDSA/arrays/problem6.js)
+### [🔹  Max Consecutive Ones(leetcode No 485)](./namasteDSA/arrays/problem7.js)
 
 
 ## 📦 Lodash Utilities
