@@ -31,7 +31,11 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Single Number(leetcode No 136)](./namasteDSA/arrays/problem9.js)
 
-### [🔹  Find the Middle Index in Array(leetcode No 1991)](./namasteDSA/arrays/problem9.js)
+### [🔹  Find the Middle Index in Array(leetcode No 1991)](./namasteDSA/arrays/problem10.js)
+
+### [🔹Flatten Deeply Nested Array(leetcode No 2625)](./namasteDSA/arrays/problem11.js)
+
+
 
 
 ## 📦 Lodash Utilities
