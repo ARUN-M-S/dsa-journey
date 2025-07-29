@@ -35,8 +35,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Flatten Deeply Nested Array(leetcode No 2625)](./namasteDSA/arrays/problem11.js)
 
-## Recursion
-### [🔹fibnociNumber(leetcode No 231)](./namasteDSA/arrays/problem11.js)
+## Binary Search
+### [🔹Binary Search(leetcode No 704)](./namasteDSA/binarySearch/binarySearch.js)
 
 
 
