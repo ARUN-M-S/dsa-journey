@@ -38,6 +38,8 @@ Each folder focuses on a specific topic or pattern and contains:
 ## Binary Search
 ### [🔹Binary Search(leetcode No 704)](./namasteDSA/binarySearch/binarySearch.js)
 
+### [🔹Binary Search(leetcode No 704)](./namasteDSA/binarySearch/binarySearch.js)
+
 
 
 
