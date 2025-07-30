@@ -1,32 +1,29 @@
-var levelOrder = function(root) {
-    if(!root) return []
-    let q=[root];
-    let ans =[]
+var levelOrder = function (root) {
+  if (!root) return [];
+  let q = [root];
+  let ans = [];
 
-    function level(curr,lvl){
-        if(!curr) return
-        if(!ans[lvl]) ans[lvl]=[]
-        ans[lvl].push(curr.val)
-        level(curr.left,lvl+1)
-        level(curr.right,lvl+1)
+  function level(curr, lvl) {
+    if (!curr) return;
+    if (!ans[lvl]) ans[lvl] = [];
+    ans[lvl].push(curr.val);
+    level(curr.left, lvl + 1);
+    level(curr.right, lvl + 1);
+  }
+  level(root, 0);
 
+  // while(q.length){
+  //     const lvlArr= [];
+  //     const lvlSize= q.length;
+  //     for(let i =0;i<lvlSize;i++){
+  //     let curr = q.shift();
+  //      lvlArr.push(curr.val);
+  //     curr.left&&q.push(curr.left)
+  //     curr.right&&q.push(curr.right)
+  //     }
 
-    }
-    level(root,0)
+  //     ans.push(lvlArr);
 
-    // while(q.length){
-    //     const lvlArr= [];
-    //     const lvlSize= q.length;
-    //     for(let i =0;i<lvlSize;i++){
-    //     let curr = q.shift();
-    //      lvlArr.push(curr.val);
-    //     curr.left&&q.push(curr.left)
-    //     curr.right&&q.push(curr.right)
-    //     }
-       
-    //     ans.push(lvlArr);
-
-    // }
-    return ans;
-    
+  // }
+  return ans;
 };
