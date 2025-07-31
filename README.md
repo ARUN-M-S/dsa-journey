@@ -40,8 +40,10 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Binary Search(leetcode No 704)](./namasteDSA/binarySearch/binarySearch.js)
 
-
+ 
 ## Linked List
+
+### [🔹Singly Linked List(leetcode No )](./namasteDSA/LinkedList/singlyLinkedList.js)
 
 
 
