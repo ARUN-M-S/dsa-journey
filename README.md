@@ -47,6 +47,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Middle of the Linked List(leetcode No 876.)](./namasteDSA/LinkedList/middleOfLL.js)
 
+### [🔹Reverse Linked List(leetcode No 206.)](./namasteDSA/LinkedList/problem2.js)
+
 
 
 ## 📦 Lodash Utilities
