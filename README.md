@@ -49,6 +49,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Reverse Linked List(leetcode No 206.)](./namasteDSA/LinkedList/problem2.js)
 
+### [🔹Intersection Node(leetcode No .)](./namasteDSA/LinkedList/problem3.js)
+
 
 
 ## 📦 Lodash Utilities
