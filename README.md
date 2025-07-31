@@ -42,8 +42,10 @@ Each folder focuses on a specific topic or pattern and contains:
 
  
 ## Linked List
-
+ 
 ### [🔹Singly Linked List(leetcode No )](./namasteDSA/LinkedList/singlyLinkedList.js)
+
+### [🔹Middle of the Linked List(leetcode No 876.)](./namasteDSA/LinkedList/middleOfLL.js)
 
 
 
