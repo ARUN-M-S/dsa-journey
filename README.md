@@ -64,6 +64,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Invert Binary Tree(leetcode No 226)](./namasteDSA/Tree/invertingTree.js)
 
+### [🔹Symmetric Tree(leetcode No 101)](./namasteDSA/Tree/isSymmetric.js)
+
 
 
 
