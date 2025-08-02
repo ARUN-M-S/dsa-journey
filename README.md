@@ -55,9 +55,12 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ## Tree
 
+
 ### [🔹Diameter of Binary Tree(leetcode No 543)](./namasteDSA/Tree/diameterOfTree.js)
 
 ### [🔹 Balanced Binary Tree(leetcode No 110)](./namasteDSA/Tree/balancedBinaryTree.js)
+
+### [🔹 Same Tree(leetcode No 100)](./namasteDSA/Tree/isSameTree.js)
 
 
 ## 📦 Lodash Utilities
