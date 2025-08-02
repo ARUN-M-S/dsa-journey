@@ -53,6 +53,11 @@ Each folder focuses on a specific topic or pattern and contains:
 
 
 
+## Tree
+
+### [🔹Diameter of Binary Tree(leetcode No 543)](./namasteDSA/Tree/diameterOfTree.js)
+
+
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
 
