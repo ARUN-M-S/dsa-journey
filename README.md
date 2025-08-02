@@ -62,6 +62,10 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Same Tree(leetcode No 100)](./namasteDSA/Tree/isSameTree.js)
 
+### [🔹Invert Binary Tree(leetcode No 226)](./namasteDSA/Tree/invertingTree.js)
+
+
+
 
 ## 📦 Lodash Utilities
 This section includes re-implemented Lodash utility functions for learning and mastery.
