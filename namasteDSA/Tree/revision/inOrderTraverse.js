@@ -1,8 +1,6 @@
 var inorderTraversal = function (root) {
     if (!root) return []
     let ans = [];
-
-
     function travers(curr) {
         if (!curr) return
         curr.left && travers(curr.left)
@@ -12,6 +10,4 @@ var inorderTraversal = function (root) {
     }
     travers(root)
     return ans;
-
-
 };
