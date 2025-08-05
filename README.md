@@ -66,6 +66,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Symmetric Tree(leetcode No 101)](./namasteDSA/Tree/isSymmetric.js)
 
+### [🔹Lowest Common Ancestor of a Binary Tree(leetcode No 236)](./namasteDSA/Tree/lowestCommonAncestor.js)
+
 
 
 
