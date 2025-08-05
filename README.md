@@ -51,8 +51,6 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Intersection Node(leetcode No .)](./namasteDSA/LinkedList/problem3.js)
 
-
-
 ## Tree
 ### [🔹Diameter of Binary Tree(leetcode No 543)](./namasteDSA/Tree/diameterOfTree.js)
 
