@@ -68,6 +68,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Lowest Common Ancestor of a Binary Tree(leetcode No 236)](./namasteDSA/Tree/lowestCommonAncestor.js)
 
+### [🔹Lowest Common Ancestor of a Binary Tree(leetcode No 235)](./namasteDSA/Tree/lowestCommonAncestor.js)
+
 
 
 
