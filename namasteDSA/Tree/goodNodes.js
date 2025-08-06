@@ -7,13 +7,9 @@ var goodNodes = function(root) {
         if(curr.val >=max){
             ans.push(curr.val)
         }
-        
-
+    
         traverse(curr.left,Math.max(max,curr.val));
         traverse(curr.right,Math.max(max,curr.val))
-
-
-
 
     }
     traverse(root,-Infinity);
