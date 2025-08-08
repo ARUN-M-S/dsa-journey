@@ -6,10 +6,8 @@ var sumNumbers = function(root) {
      if(!curr.left && !curr.right) return currSum;
   
      return travers(curr.left,currSum) + travers(curr.right,currSum)
-     
-  
+    
     }
     return travers(root,0);
-  
-      
+ 
   };
