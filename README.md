@@ -69,7 +69,7 @@ Each folder focuses on a specific topic or pattern and contains:
 ### [🔹Sum Root to Leaf Numbers(leetcode No 129.)](./namasteDSA/Tree/sumRootOfLeafNumbers.js)
 
 
-### [🔹Populating Next Right Pointers in Each Node(leetcode No 116.)](./namasteDSA/Tree/sumRootOfLeafNumbers.js)
+### [🔹Populating Next Right Pointers in Each Node(leetcode No 116.)](./namasteDSA/Tree/nextRightNode.js)
 
 
  
