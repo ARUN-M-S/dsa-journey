@@ -64,6 +64,9 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹Lowest Common Ancestor of a Binary Search Tree(leetcode No 235)](./namasteDSA/Tree/lcaOfBST.js)
 
+### [🔹Binary Tree Maximum Path Sum(leetcode No 124.)](./namasteDSA/Tree/lcaOfBST.js)
+ 
+
 
 
 
