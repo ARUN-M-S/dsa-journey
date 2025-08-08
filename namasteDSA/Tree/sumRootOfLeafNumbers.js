@@ -9,5 +9,4 @@ var sumNumbers = function(root) {
     
     }
     return travers(root,0);
- 
   };
