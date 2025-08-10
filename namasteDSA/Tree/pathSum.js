@@ -1,7 +1,7 @@
 
- var hasPathSum = function(root, targetSum) {
+var hasPathSum = function (root, targetSum) {
 
-    if(!root) return false;
+    if (!root) return false;
     // let ans = false;
     // function travers(curr,currSum){
     //     let sum = currSum+curr.val;
@@ -9,7 +9,7 @@
     //         if(sum ==targetSum){
     //         ans = ans || true;
     //         }
-          
+
     //     }
 
     //    curr.left&& travers(curr.left,sum)
@@ -20,12 +20,12 @@
     // return ans
     // ;
 
-    if(!root.left && !root.right){
-        if(targetSum == root.val){
+    if (!root.left && !root.right) {
+        if (targetSum == root.val) {
             return true;
         }
     }
-        return hasPathSum(root.left, targetSum-root.val) || hasPathSum(root.right, targetSum-root.val) 
+    return hasPathSum(root.left, targetSum - root.val) || hasPathSum(root.right, targetSum - root.val)
 
-     
+
 };
