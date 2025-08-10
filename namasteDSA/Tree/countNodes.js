@@ -1,15 +1,15 @@
-var countNodes = function(root) {
+var countNodes = function (root) {
 
-    if(!root) return 0;
+    if (!root) return 0;
 
-    if(!root.left) return 1+ countNodes(root.right)
-    if(!root.right) return 1+ countNodes(root.left)
-    return 1+countNodes(root.right) +countNodes(root.left)
-    
+    if (!root.left) return 1 + countNodes(root.right)
+    if (!root.right) return 1 + countNodes(root.left)
+    return 1 + countNodes(root.right) + countNodes(root.left)
+
 };
 
 
-var countNodes = function(root) {
+var countNodes = function (root) {
     if (!root) return 0;
 
     let leftHeight = getHeight(root.left);
