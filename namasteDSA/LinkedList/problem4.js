@@ -5,10 +5,8 @@ var oddEvenList = function(head) {
     let temp = even;
  
     while(odd.next && even.next){
-     
             odd.next=odd.next.next;
             odd=odd.next
-    
             even.next=even.next.next;
             even=even.next
     }
