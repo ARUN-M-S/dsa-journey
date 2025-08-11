@@ -6,6 +6,4 @@ function recursionInplace(arr,start=0,end=arr.length-1){
 }
 let arr = [1,2,3,4,5]
 console.log(recursionInplace(arr))
-
-
 console.log(arr)
