@@ -3,7 +3,6 @@ function sum (arr,index=0){
     if(index==arr.length-1){ 
         return isOdd ? arr[index] : 0
     }
-
     return (isOdd ? arr[index] : 0 )+sum(arr,index+1) 
 }
 
