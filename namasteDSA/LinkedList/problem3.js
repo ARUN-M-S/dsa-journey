@@ -17,8 +17,6 @@ var getIntersectionNode = function (headA, headB) {
             set.add(temp2);
             temp2 = temp2.next;  
         }
-
-
     }
     return null
 };
