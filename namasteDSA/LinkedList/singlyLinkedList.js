@@ -1,4 +1,3 @@
-const { runInThisContext } = require("vm");
 
 class Node{
     constructor(val){
@@ -6,7 +5,6 @@ class Node{
         this.next=null;
     }
 }
-
 class SL{
     constructor(){
         this.head=null;
