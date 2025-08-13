@@ -6,7 +6,6 @@ var inorderTraversal = function (root) {
         curr.left && travers(curr.left)
         ans.push(curr.val)
         curr.right && travers(curr.right)
-
     }
     travers(root)
     return ans;
