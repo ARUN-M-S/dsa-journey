@@ -10,7 +10,6 @@ var levelOrder = function(root) {
             lvl.push(curr.val)
             curr.left&&  q.push(curr.left)
             curr.right&&  q.push(curr.right)
-       
             
         }
         
