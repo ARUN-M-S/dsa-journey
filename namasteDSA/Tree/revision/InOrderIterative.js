@@ -7,7 +7,6 @@ var inorderTraversal = function(root) {
         while(curr){
             stack.push(curr);
             curr = curr.left;
-
         }
         curr = stack.pop();
         ans.push(curr.val);
