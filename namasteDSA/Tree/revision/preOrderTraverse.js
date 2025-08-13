@@ -8,7 +8,6 @@ var preorderTraversal = function(root) {
         curr.right && travers(curr.right)
 
     };
-
     travers(root)
     return ans;
     
