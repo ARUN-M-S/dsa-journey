@@ -6,7 +6,6 @@ var postorderTraversal = function (root) {
          curr.left&& traverse(curr.left);
          curr.right&& traverse(curr.right);
          ans.push(curr.val)
-
     }
     traverse(root)
     return ans
