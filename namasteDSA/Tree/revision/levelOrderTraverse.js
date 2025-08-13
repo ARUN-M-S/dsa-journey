@@ -15,9 +15,6 @@ var levelOrder = function(root) {
         }
         
        ans.push(lvl)
-
-       
-
     }
     return ans;
 
