@@ -11,8 +11,11 @@ var levelOrderBottom = function(root) {
             curr.left && q.push(curr.left);
             curr.right && q.push(curr.right)
         }
- ans.push(lvlArray)
+//  ans.push(lvlArray)
+ ans.unshift(lvlArray)
+
     }
-    return ans.reverse();
+    // return ans.reverse();
+    return ans;
 
 };
