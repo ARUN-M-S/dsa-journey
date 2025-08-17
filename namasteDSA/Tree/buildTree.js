@@ -13,7 +13,6 @@ var buildTree = function(preorder, inorder) {
          root.left = helper(sIdx,leftIno-1);
          root.right = helper(leftIno+1,eIdx);
          return root;
-
     };
     return helper(0,preorder.length-1)
     
