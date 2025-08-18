@@ -9,10 +9,8 @@ var averageOfLevels = function (root) {
             sum += curr.val;
             curr.left && q.push(curr.left)
             curr.right && q.push(curr.right)
-
         }
         avg.push(sum / size)
-
     }
     return avg
 
