@@ -30,7 +30,6 @@ class MinHeap {
             }
         }
     }
-
 }
 
 let heap = new MinHeap();
