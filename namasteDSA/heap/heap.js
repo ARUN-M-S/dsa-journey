@@ -6,6 +6,10 @@ class MinHeap{
         return 2*i+1
     }
 
+    getRightChildIndex(i){
+        return 2*i+1
+    }
+
     insert(val){
 
     }
