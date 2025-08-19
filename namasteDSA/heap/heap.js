@@ -10,6 +10,10 @@ class MinHeap{
         return 2*i+2
     }
 
+    getParentIndex(i){
+        return Math.floor((i-1)/2)
+    }
+
     insert(val){
 
     }
