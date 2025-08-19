@@ -18,8 +18,6 @@ class MinHeap {
         this.heap.push(val);
         let index = this.heap.length - 1;
         this.heapifyUp(index)
-
-
     }
     heapifyUp(i) {
         while (i > 0) {
