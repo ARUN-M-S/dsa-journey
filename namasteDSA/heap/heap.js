@@ -37,5 +37,6 @@ class MinHeap {
 
 let heap = new MinHeap();
 heap.insert(7)
+heap.insert(3)
 
 console.log(heap.heap)
