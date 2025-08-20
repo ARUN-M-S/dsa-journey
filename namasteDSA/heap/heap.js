@@ -36,19 +36,27 @@ class MinHeap {
         }
     }
     heapifyDown(i){
-        while(i<this.heap.length){
-            let leftIndex = this.getLeftChildIndex(i);
-            let rightIndex = this.getRightChildIndex(i);
-            if(this.heap[leftIndex]<this.heap[rightIndex]){
-                [this.heap[leftIndex],this.heap[i]] = [this.heap[i],this.heap[leftIndex]]
-                i = leftIndex
-            }else if(this.heap[rightIndex]<this.heap[leftIndex]){
-                [this.heap[rightIndex],this.heap[i]] = [this.heap[i],this.heap[rightIndex]]
-                i=rightIndex
-            }else{
-                break;
+        let leftIndex = this.getLeftChildIndex(i);
+        let rightIndex = this.getRightChildIndex(i);
+        let smallest = i;
+        
+            
+            if(this.heap[leftIndex]<this.heap[smallest]){
+                smallest= leftIndex
+                
             }
-        }
+             if(this.heap[rightIndex]<this.heap[smallest]){
+                smallest=rightIndex
+            }
+         
+
+            if(smallest != i){
+                [this.heap[i],this.heap[smallest]] = [this.heap[smallest],this.heap[i]]
+
+                this.heapifyDown(smallest)
+
+            }
+      
     }
 }
 
