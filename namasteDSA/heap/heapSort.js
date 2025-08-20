@@ -10,7 +10,6 @@ function heapSort(arr){
     }
     return arr;
 }
-
 function heapifyDown(arr,i,n){
     let largest = i;
     let left = (2*i)+1;
