@@ -2,7 +2,7 @@ let arr = [2,7,9,6,15,4,3]
 function heapSort(arr){
     let  n = arr.length;
 
-    for(let i =n-1;i>=0;i--){
+    for(let i = Math.floor(n/2)-1;i>=0;i--){
       heapifyDown(arr,i,n)
     }
     for(let i =n-1;i>0;i--){
