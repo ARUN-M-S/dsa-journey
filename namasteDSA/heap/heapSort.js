@@ -21,11 +21,9 @@ function heapifyDown(arr,i,n){
     if(right < n && arr[right]> arr[largest]){
         largest= right
     }
-
     if(i!==largest){
         [arr[largest],arr[i]] = [arr[i],arr[largest]]
         heapifyDown(arr,largest,n)
-
     }
 }
 heapSort(arr);
