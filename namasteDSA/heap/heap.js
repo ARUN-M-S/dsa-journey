@@ -38,14 +38,15 @@ class MinHeap {
     heapifyDown(i){
         let leftIndex = this.getLeftChildIndex(i);
         let rightIndex = this.getRightChildIndex(i);
+        let n = this.heap.length;
         let smallest = i;
         
             
-            if(this.heap[leftIndex]<this.heap[smallest]){
+            if(leftIndex <n && this.heap[leftIndex]<this.heap[smallest]){
                 smallest= leftIndex
                 
             }
-             if(this.heap[rightIndex]<this.heap[smallest]){
+             if(rightIndex <n && this.heap[rightIndex]<this.heap[smallest]){
                 smallest=rightIndex
             }
          
