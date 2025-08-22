@@ -17,3 +17,13 @@ class PriorityQueue{
         return this.queue.length ==0
     }
 }
+
+let pq = new PriorityQueue();
+pq.enque("arun",1)
+pq.enque("arun2",2)
+pq.enque("arun10",10)
+pq.enque("arun6",6)
+
+console.log(pq.dequeue())
+
+
