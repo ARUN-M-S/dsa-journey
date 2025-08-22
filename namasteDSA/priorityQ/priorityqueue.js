@@ -20,7 +20,6 @@ class PriorityQueue{
         return this.queue.length;
     }
 }
-
 let pq = new PriorityQueue();
 pq.enque("arun",1)
 pq.enque("arun2",2)
