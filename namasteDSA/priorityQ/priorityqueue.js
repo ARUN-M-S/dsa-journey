@@ -5,7 +5,7 @@ class PriorityQueue{
 
     enque(val,prority){
         this.queue.push({val,prority});
-        this.queue.sort((a,b)=>a.prority -b.prority)
+        this.queue.sort((a,b)=>b.prority -a.prority)
     }
     dequeue(){
         return this.queue.shift()
