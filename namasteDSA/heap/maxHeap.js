@@ -27,6 +27,11 @@ class maxHeap{
         
 
     }
+    extract(){
+        this.heap[0] = this.heap[this.heap.length-1]
+        this.heap.pop();
+        this.heapifyDown(0)
+    }
 
     heapifyUp(i){
         while(i>0){
@@ -39,6 +44,24 @@ class maxHeap{
             }
         }
     }
+    heapifyDown(i){
+        let left = this.getLeftChild(i);
+        let right = this.getRightChild(i);
+        let n = this.size();
+        let smallest = i
+        if(left<n &&  this.heap[smallest]<this.heap[left]){
+          smallest=left
+        }
+        if(right <n && this.heap[smallest]<this.heap[right]){
+            smallest= right
+        }
+        if(i!==smallest){
+            [this.heap[smallest],this.heap[i]] =[this.heap[i],this.heap[smallest]]
+            
+            this.heapifyDown(smallest)
+        }
+
+    }
 }
 
 let heap = new maxHeap();
@@ -48,5 +71,7 @@ heap.insert(30)
 heap.insert(23);
 heap.insert(27);
 heap.insert(16);
-console.log(heap)
+console.log(heap);
+heap.extract()
+console.log(heap);
 
