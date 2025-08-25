@@ -71,6 +71,12 @@ Each folder focuses on a specific topic or pattern and contains:
 ### [🔹Populating Next Right Pointers in Each Node(leetcode No 116.)](./namasteDSA/Tree/nextRightNode.js)
 
 
+## Priority queue
+
+### [🔹 Kth Smallest Number in Multiplication Table(leetcode No 668.)](./namasteDSA/priorityQ/findKthNumber.js)
+
+
+
  
 
 
