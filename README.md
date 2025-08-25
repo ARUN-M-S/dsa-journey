@@ -77,6 +77,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Kth Smallest Element in a Sorted Matrix(leetcode No 378.)](./namasteDSA/priorityQ/kthSmallestInmatrix.js)
 
+### [🔹 Top K Frequent Elements(leetcode No 347.)](./namasteDSA/priorityQ/topKfrq.js)
+
 
 
  
