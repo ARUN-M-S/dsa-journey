@@ -78,6 +78,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Top K Frequent Elements(leetcode No 347.)](./namasteDSA/priorityQ/topKfrq.js)
 
+## Heap
+
 
 
  
