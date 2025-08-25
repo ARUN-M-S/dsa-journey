@@ -72,7 +72,6 @@ Each folder focuses on a specific topic or pattern and contains:
 
 
 ## Priority queue
-
 ### [🔹 Kth Smallest Number in Multiplication Table(leetcode No 668.)](./namasteDSA/priorityQ/findKthNumber.js)
 
 ### [🔹 Kth Smallest Element in a Sorted Matrix(leetcode No 378.)](./namasteDSA/priorityQ/kthSmallestInmatrix.js)
