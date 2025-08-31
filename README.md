@@ -83,6 +83,8 @@ Each folder focuses on a specific topic or pattern and contains:
 ## Heap
 ### [🔹 Minimum Amount of Time to Fill Cups(leetcode No 2335.)](./namasteDSA/heap/fillCups.js)
 
+### [🔹 Minimum Amount of Time to Fill Cups(leetcode No 2335.)](./namasteDSA/heap/fillCups.js)
+
 
 ## Priority Queue
 ### [🔹 Top K Frequent Elements(leetcode No 347.)](./namasteDSA/priorityQ/topKfrq.js)

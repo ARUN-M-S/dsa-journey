@@ -13,7 +13,6 @@ var findKthNumber = function(m, n, k) {
             right=mid-1
         }else{
             left = mid+1
-
         }
     }
     return ans
