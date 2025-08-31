@@ -10,7 +10,6 @@ var combine = function (n, k) {
             backTrack(path, j + 1)
             path.pop()
         }
-
     }
     backTrack([], 1)
     return result
