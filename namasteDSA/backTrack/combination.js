@@ -12,9 +12,6 @@ var combine = function (n, k) {
             path.pop()
         }
 
-
-
-
     }
     backTrack([], 1)
     return result
