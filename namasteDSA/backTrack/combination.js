@@ -6,7 +6,6 @@ var combine = function (n, k) {
             return
         }
         for (let j = i; j <= n; j++) {
-
             path.push(j)
             backTrack(path, j + 1)
             path.pop()
