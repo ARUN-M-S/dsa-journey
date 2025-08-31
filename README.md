@@ -81,6 +81,7 @@ Each folder focuses on a specific topic or pattern and contains:
 ### [🔹Last Stone Weight(leetcode No 1046.)](./namasteDSA/priorityQ/lastStoneWeight.js)
 
 ## Heap
+### [🔹 Minimum Amount of Time to Fill Cups(leetcode No 2335.)](./namasteDSA/heap/fillCups.js)
 
 
 ## Priority Queue
