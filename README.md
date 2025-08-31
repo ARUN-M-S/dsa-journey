@@ -89,6 +89,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Combinations(leetcode No 77.)](./namasteDSA/backTrack/combination.js)
 
+### [🔹 Subsets(leetcode No 78.)](./namasteDSA/backTrack/subSet.js)
+
 
  
 
