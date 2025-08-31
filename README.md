@@ -91,6 +91,8 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Subsets(leetcode No 78.)](./namasteDSA/backTrack/subSet.js)
 
+### [🔹 Subsets II(leetcode No 90.)](./namasteDSA/backTrack/subSetWithDuplicate.js)
+
 
  
 
