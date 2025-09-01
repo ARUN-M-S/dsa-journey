@@ -12,9 +12,6 @@ var combinationSum = function(candidates, target) {
             backTrack(path,i,sum+candidates[i]);
             path.pop()
         }
-
-
-
     }
     backTrack([],0,0);
     return result;
