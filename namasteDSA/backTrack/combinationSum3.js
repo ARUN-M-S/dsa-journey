@@ -8,7 +8,6 @@ var combinationSum3 = function(k, n) {
         };
         if (sum > n || path.length>k) return;
         for (let i = start; i <=9; i++) {
-           
             path.push(i);
             backTrack(path, i + 1, sum + i);
             path.pop()
