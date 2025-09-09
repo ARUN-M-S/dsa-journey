@@ -106,7 +106,7 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Permutations(leetcode No 46..)](./namasteDSA/backTrack/permutation.js)
 
-### [🔹 Permutations2(leetcode No 47..)](./namasteDSA/backTrack/permutation.js)
+### [🔹 Permutations2(leetcode No 47..)](./namasteDSA/backTrack/permutationUnique.js)
  
 
 
