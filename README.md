@@ -104,7 +104,7 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Matchsticks to Square(leetcode No 473..)](./namasteDSA/backTrack/makeSquare.js)
 
-### [🔹 Permutations(leetcode No 473..)](./namasteDSA/backTrack/makeSquare.js)
+### [🔹 Permutations(leetcode No 46..)](./namasteDSA/backTrack/permutation.js)
  
 
 
