@@ -102,7 +102,7 @@ Each folder focuses on a specific topic or pattern and contains:
 
 ### [🔹 Palindrome Partitioning(leetcode No 131..)](./namasteDSA/backTrack/partitioning.js)
 
-### [🔹 Matchsticks to Square(leetcode No 473..)](./namasteDSA/backTrack/partitioning.js)
+### [🔹 Matchsticks to Square(leetcode No 473..)](./namasteDSA/backTrack/makeSquare.js)
  
 
 
