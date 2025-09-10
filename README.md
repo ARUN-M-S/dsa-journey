@@ -101,7 +101,6 @@ Each folder focuses on a specific topic or pattern and contains:
 ### [🔹 Combination Sum (leetcode No 39.)](./namasteDSA/backTrack/combinationSum.js)
 ### [🔹 Palindrome Partitioning(leetcode No 131..)](./namasteDSA/backTrack/partitioning.js)
 ### [🔹 Matchsticks to Square(leetcode No 473..)](./namasteDSA/backTrack/makeSquare.js)
-
 ### [🔹 Permutations(leetcode No 46..)](./namasteDSA/backTrack/permutation.js)
 
 ### [🔹 Permutations2(leetcode No 47..)](./namasteDSA/backTrack/permutationUnique.js)
