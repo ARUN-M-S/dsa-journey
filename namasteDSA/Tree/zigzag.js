@@ -18,7 +18,6 @@ var zigzagLevelOrder = function (root) {
       curr.right && q.push(curr.right);
     }
     count++;
-
     ans.push(lvlArr);
   }
   return ans;
