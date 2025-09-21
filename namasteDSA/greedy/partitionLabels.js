@@ -1,0 +1,2 @@
+var partitionLabels = function(s) {
+}
