@@ -11,4 +11,14 @@ var partitionLabels = function(s) {
         }
     }
     let partitionStart = partitionEnd =0;
+    for(let i =0;i<s.length;i++){
+        let char = s.charCodeAt(i)-97;
+        if(partitionEnd<first[char]){
+            ans.push(partitionEnd-partitionStart)
+            partitionStart = partitionEnd =i
+        }
+        partitionEnd = Math.max(partitionEnd,last[char] )
+
+
+    }
 }
