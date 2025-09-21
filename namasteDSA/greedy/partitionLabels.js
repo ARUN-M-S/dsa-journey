@@ -14,7 +14,7 @@ var partitionLabels = function(s) {
     for(let i =0;i<s.length;i++){
         let char = s.charCodeAt(i)-97;
         if(partitionEnd<first[char]){
-            ans.push(partitionEnd-partitionStart)
+            ans.push(partitionEnd-partitionStart+1)
             partitionStart = partitionEnd =i
         }
         partitionEnd = Math.max(partitionEnd,last[char] )
