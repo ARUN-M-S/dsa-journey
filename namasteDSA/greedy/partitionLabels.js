@@ -22,6 +22,6 @@ var partitionLabels = function(s) {
 
     if(partitionEnd-partitionStart+1 >0){
         ans.push(partitionEnd-partitionStart+1)
-   }
+    }
    return ans
 }
