@@ -18,8 +18,6 @@ var partitionLabels = function(s) {
             partitionStart = partitionEnd =i
         }
         partitionEnd = Math.max(partitionEnd,last[char] )
-
-
     }
 
     if(partitionEnd-partitionStart+1 >0){
