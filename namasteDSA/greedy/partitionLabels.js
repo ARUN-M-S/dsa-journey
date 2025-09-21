@@ -19,7 +19,6 @@ var partitionLabels = function(s) {
         }
         partitionEnd = Math.max(partitionEnd,last[char] )
     }
-
     if(partitionEnd-partitionStart+1 >0){
         ans.push(partitionEnd-partitionStart+1)
     }
