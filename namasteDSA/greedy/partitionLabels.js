@@ -10,4 +10,5 @@ var partitionLabels = function(s) {
             last[char]=i;
         }
     }
+    let partitionStart = partitionEnd =0;
 }
