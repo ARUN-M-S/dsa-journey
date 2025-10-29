@@ -1,22 +1,22 @@
 function bubbleSort(arr){
-    let n= arr.length;
-
-    for(let i=n;i>0;i--){
-        let swapped =true;
-        for(let j=0;j<i-1;j++){
+    let n = arr.length;
+    for(let i =0;i<n;i++){
+        let swapped = false;
+        for(j=0;j<n-1-i;j++){
             if(arr[j]>arr[j+1]){
-                swap(arr,j,j+1);
-                swapped=false;
+                let temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp
+                swapped = true;
             }
         }
-        if(swapped) break;
+        if(!swapped){
+            break
+        }
     }
-    return arr;
+    return arr
+
+
 }
 
-function swap(arr,i,j){
-    return [arr[i],arr[j]]=[arr[j],arr[i]]
-}
-
-
-console.log(bubbleSort([9,5,6,8,2,1,22,66,4]))
+console.log(bubbleSort([4,7,88,9,1,2,84]))
