@@ -5,7 +5,6 @@ var moveZeroes = function (nums) {
             let temp = nums[i]
             nums[i] = 0;
             nums[i - count] = temp
-
         } else {
             count++
         }
