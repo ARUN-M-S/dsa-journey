@@ -1,5 +1,4 @@
 var merge = function (nums1, m, nums2, n) {
-
     let k = nums1.length - 1;
     while (m > 0 && n > 0) {
         if (nums1[m - 1] > nums2[n]) {
