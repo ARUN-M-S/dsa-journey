@@ -21,8 +21,6 @@ var threeSum = function(nums) {
             }else{
                 L++
             }
-
-
         }
     }
     return result;
