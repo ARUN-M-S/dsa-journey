@@ -1,4 +1,3 @@
-
  var trap = function(height) {
     let total =0;
     let maxL=maxR=L=0;
