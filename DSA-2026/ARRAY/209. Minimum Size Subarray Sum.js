@@ -10,11 +10,6 @@ var minSubArrayLen = function(target, nums) {
             min = Math.max(0,Math.min(min,R-L+1))
              L++
         }
-     
-        // if(total>=target){
-
-        // }
-        
         
     }
     return min ==Infinity ? 0 :min;
