@@ -13,3 +13,14 @@ var strStr = function(haystack, needle) {
     }
     return -1
 };
+
+var strStr = function(haystack, needle) {
+    let n= needle.length;
+    let m = haystack.length;
+
+    for(let i =0;i<=m-n;i++){
+       if(haystack.substring(i,i+n)==needle) return i
+
+    }
+    return -1
+}
