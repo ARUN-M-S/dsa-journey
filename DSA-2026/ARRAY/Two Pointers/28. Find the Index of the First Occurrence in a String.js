@@ -5,13 +5,11 @@ var strStr = function(haystack, needle) {
         if(haystack[i]==needle[L]){
         if(L==needle.length-1) return i-L
             L++
-        
         }else{
            
             i=i-L
              L=0
         }
-
     }
     return -1
 };
