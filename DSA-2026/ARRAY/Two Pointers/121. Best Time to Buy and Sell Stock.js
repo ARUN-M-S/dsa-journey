@@ -7,7 +7,6 @@ var maxProfit = function (prices) {
         } else {
             L = R
         }
-
     }
     return maxProfit
 
