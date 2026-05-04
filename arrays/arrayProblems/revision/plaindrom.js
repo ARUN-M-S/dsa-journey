@@ -17,4 +17,4 @@ function validatePalindrom(str){
 function isAlphaNumeric(char){
     return  /[a-z0-9]/i.test(char)
 }
-console.log(validatepalindrom('A man, a plan, a canal: Panamaa'))
+console.log(validatePalindrom('A man, a plan, a canal: Panamaa'))
