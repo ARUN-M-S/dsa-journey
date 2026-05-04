@@ -7,7 +7,7 @@ function fourSum(arr,target){
 
     let result =[]
     for(let i =0;i<arr.length-3;i++){
-        // if(arr[i]>target) break;
+        
         if(i>0 && arr[i]==arr[i-1]) continue;
         
         for(let j =i+1;j<arr.length-2;j++){
