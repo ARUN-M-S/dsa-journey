@@ -6,7 +6,7 @@ function search(arr,target){
         if(arr[M]==target) return M;
         if(arr[L]<=arr[M]){
             if(arr[L]<=target && arr[M]>target){
-                R=M+1;
+                R=M-1;
     
     
             }else{
