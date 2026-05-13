@@ -5,7 +5,7 @@ var findMin = function (arr) {
         let M = L + Math.floor((R - L) / 2);
         if (arr[L] < arr[M]) {
             if (arr[M] > arr[R]) {
-                L = M+1
+                L = M + 1
             } else {
                 R = M
             }
@@ -13,7 +13,7 @@ var findMin = function (arr) {
             if (arr[M] < arr[R]) {
                 R = M
             } else {
-                L = M+1
+                L = M + 1
             }
         }
 
