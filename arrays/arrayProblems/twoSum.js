@@ -14,4 +14,20 @@ function twoSum(arr,target){
     
 }
 
-console.log(twoSum([3,3],6))
+
+function twoSum2(arr,target){
+    if(arr.length<=1)return [];
+    let map ={}
+    for(let i =0;i<arr.length;i++){
+        let diff = target-arr[i];
+        
+        if(map[diff]!== undefined){
+            return [map[diff],i]
+        }
+        map[arr[i]]=i
+      
+    }
+    return []
+    
+}
+console.log(twoSum2([3,2,1,4,5,3],6))
