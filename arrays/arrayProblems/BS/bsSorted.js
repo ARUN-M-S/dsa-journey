@@ -26,6 +26,7 @@ function find(arr,t){
         }
     }
     return -1;
+    
 }
 
 console.log(find(nums,target))
