@@ -1,5 +1,5 @@
 var minEatingSpeed = function(piles, h) {
-    let l =0;
+    let l =1;
     let r = Math.max(...piles);
     let hour=Infinity;
 
