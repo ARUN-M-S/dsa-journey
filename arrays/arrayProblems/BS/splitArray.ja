@@ -1,5 +1,0 @@
-var splitArray = function(nums, k) {
-    let l = Math.max(...nums);
-    let r= nums.reduce((a,b)=>a+b,0)
-    
-};
