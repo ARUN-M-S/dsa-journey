@@ -12,3 +12,16 @@ var splitArray = function(nums, k) {
     return l
     
 };
+
+let helper = function (nums,k,m){
+    let sum=0;
+    let count =1;
+    for(let i =0;i<nums.length;i++){
+        sum+=nums[i];
+        if(sum>m){
+            count++;
+            sum=nums[i]
+        }
+    }
+    return count<=k
+}
