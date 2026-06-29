@@ -6,7 +6,7 @@ var findMaxAverage = function (nums, k) {
   let r = 0;
   while (r < nums.length) {
     sum += nums[r];
-    if (r - l + 1 == k) {
+    if ((r - l + 1) == k) {
       avg = Math.max(avg, sum / k);
 
       sum -= nums[l];
