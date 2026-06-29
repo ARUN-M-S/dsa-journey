@@ -9,8 +9,7 @@ var splitArray = function(nums, k) {
             l=m+1
         }
     }
-    return l
-    
+    return l 
 };
 
 let helper = function (nums,k,m){
