@@ -21,3 +21,26 @@ var maxVowels = function (s, k) {
 
     return maxCount
 };
+
+
+var maxVowels = function (s, k) {
+    if (k > s.length) return -1;
+    let i = 0;
+    let j = 0;
+    let maxCount = 0;
+    let vowels = new Set('aeiou')
+    let count = 0;
+
+    while (j < s.length) {
+        if(j-i<k ){
+            if(vowels.has(s[j]))count++
+            j++;
+        }else {
+            if(vowels.has(s[i]))count--
+            i++
+        }
+        maxCount=Math.max(maxCount,count)
+    }
+
+    return maxCount
+};
