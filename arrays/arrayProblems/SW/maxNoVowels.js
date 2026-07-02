@@ -41,6 +41,5 @@ var maxVowels = function (s, k) {
         }
         maxCount=Math.max(maxCount,count)
     }
-
     return maxCount
 };
