@@ -1,25 +1,25 @@
 function minDays(weights, d) {
     let left = Math.max(...weights);
-    let r = weights.reduce((a, b) => a + b, 0);
+    let right = weights.reduce((a, b) => a + b, 0);
 
-    while (left < r) {
-        let m = left + Math.floor((r - left) / 2)
+    while (left < right) {
+        let mid = left + Math.floor((right - left) / 2)
 
-        if (helper(weights, m, d)) {
-            r = m
+        if (helper(weights, mid, d)) {
+            right = mid
         } else {
-            left = m + 1
+            left = mid + 1
         }
     }
     return left;
 }
 
-function helper(weights, m, d) {
+function helper(weights, mid, d) {
     let sum = 0;
     let count = 1;
     for (let i = 0; i < weights.length; i++) {
         sum += weights[i];
-        if (sum > m) {
+        if (sum > mid) {
             sum = weights[i];
             count++
         }
