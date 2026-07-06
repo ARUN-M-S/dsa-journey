@@ -1,11 +1,11 @@
-function minDays(w, d) {
-    let l = Math.max(...w);
-    let r = w.reduce((a, b) => a + b, 0);
+function minDays(weights, d) {
+    let l = Math.max(...weights);
+    let r = weights.reduce((a, b) => a + b, 0);
 
-    while (l < r) {
+    weightshile (l < r) {
         let m = l + Math.floor((r - l) / 2)
 
-        if (helper(w, m, d)) {
+        if (helper(weights, m, d)) {
             r = m
         } else {
             l = m + 1
@@ -14,13 +14,13 @@ function minDays(w, d) {
     return l;
 }
 
-function helper(w, m, d) {
+function helper(weights, m, d) {
     let sum = 0;
     let count = 1;
-    for (let i = 0; i < w.length; i++) {
-        sum += w[i];
+    for (let i = 0; i < weights.length; i++) {
+        sum += weights[i];
         if (sum > m) {
-            sum = w[i];
+            sum = weights[i];
             count++
         }
     }
