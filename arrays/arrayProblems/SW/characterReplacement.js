@@ -9,7 +9,6 @@ var characterReplacement = function(s, k) {
          max= Math.max(map[s[r]],max);
          
          while((r-l+1)-max >k){
-             
            map[s[l]] =(map[s[l]]||0)-1;
            
            l++
