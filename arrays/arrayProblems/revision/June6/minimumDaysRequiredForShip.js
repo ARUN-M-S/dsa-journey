@@ -19,7 +19,6 @@ function helper(w,m,d){
     let count =1;
 
     for(let i=0;i< w.length;i++){
-   
         sum+=w[i];
         if(sum>m){
             sum=w[i];
