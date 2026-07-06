@@ -6,7 +6,6 @@ var characterReplacement = function(s, k) {
      let longest =0
      while(r<s.length){
          map[s[r]] =(map[s[r]]||0)+1;
-         
          max= Math.max(map[s[r]],max);
          
          while((r-l+1)-max >k){
