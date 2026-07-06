@@ -2,7 +2,7 @@ function minDays(weights, d) {
     let l = Math.max(...weights);
     let r = weights.reduce((a, b) => a + b, 0);
 
-    weightshile (l < r) {
+    while (l < r) {
         let m = l + Math.floor((r - l) / 2)
 
         if (helper(weights, m, d)) {
