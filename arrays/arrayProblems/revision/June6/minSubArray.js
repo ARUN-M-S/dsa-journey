@@ -1,0 +1,3 @@
+function min(arr,t){
+    
+}
