@@ -19,5 +19,4 @@ function totalFruit(fruits) {
 
   return maxFruit;
 }
-
 console.log(totalFruit([1, 2, 3, 3, 3, 2]));
