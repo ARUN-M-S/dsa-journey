@@ -1,7 +1,7 @@
 var productExceptSelf = function (nums) {
-    let left = Array(nums).fill(1);
-    let right = Array(nums).fill(1)
-    let result = Array(nums).fill(1)
+    let left = Array(nums.length).fill(1);
+    let right = Array(nums.length).fill(1);
+    let result = Array(nums.length).fill(1);
 
     let product = 1;
     let n = nums.length
