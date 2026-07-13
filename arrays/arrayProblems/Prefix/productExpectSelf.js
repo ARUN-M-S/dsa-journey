@@ -30,7 +30,6 @@ var productExceptSelf = function (nums) {
     result[i] = result[i - 1] * nums[i - 1];
   }
   let prod = 1;
-
   //suffix
   for (let i = n - 1; i >= 0; i--) {
     result[i] *= prod;
