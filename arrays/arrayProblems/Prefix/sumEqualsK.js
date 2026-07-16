@@ -1,0 +1,3 @@
+function subArraySum(nums,k){
+    
+}
