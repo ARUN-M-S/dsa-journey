@@ -7,7 +7,6 @@ function twoSum(nums,target){
             return [i,map[target-nums[i]]]
         }
         map[nums[i]] = i
-
     }
     return []
 }
