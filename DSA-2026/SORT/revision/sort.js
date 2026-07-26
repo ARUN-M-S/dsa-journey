@@ -34,7 +34,6 @@ let n = arr.length
             }
         }
         if(min!=i)swap(arr,i,min)
-     
     }
     return arr
   }
