@@ -9,7 +9,6 @@ function merge(left,right){
             result.push(right[r++])
         }
     }
-
     return [...result,...left.slice(l),...right.slice(r)]
 }
 
