@@ -4,7 +4,6 @@ function insertionSort(arr){
         let prev = i-1;
         while(curr<arr[prev]  && prev>=0){
             arr[prev+1]= arr[prev];
-            
             prev--
         }
     }
