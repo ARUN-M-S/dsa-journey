@@ -10,7 +10,6 @@ function quickSort(arr, startIndex, endIndex) {
 function findPivot(arr, start, end) {
   let pivot = arr[end];
   let pos = start;
-
   for (let i = start; i < end; i++) {
     if (arr[i] < pivot) {
       [arr[i], arr[pos]] = [arr[pos], arr[i]];
