@@ -13,7 +13,6 @@ function findPivot(arr,start,end){
             pos++
         }
     }
- 
     [arr[end],arr[pos]]= [arr[pos],arr[end]]
     return pos
 }
