@@ -21,3 +21,4 @@ function findPivot(arr, start, end) {
 }
 
 console.log(quickSort([4, 3, 5, 7, 8, 9, 2, 1, 0, 23], 0, 9));
+console.log(quickSort([43, 89, 5, 57, 8, 22, 12, 12, 0, 23], 0, 9));
