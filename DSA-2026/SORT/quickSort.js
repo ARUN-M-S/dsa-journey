@@ -4,6 +4,7 @@ function quickSort(arr, startIndex, endIndex) {
     quickSort(arr, startIndex, pivot - 1);
     quickSort(arr, pivot + 1, endIndex);
   }
+  
   return arr;
 }
 
