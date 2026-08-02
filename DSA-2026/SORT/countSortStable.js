@@ -1,18 +1,30 @@
 function sort(arr){
     let max= Math.max(...arr);
     let count = new Array(max+1).fill(0);
+    
     for(let x of arr){
         count[x]++
     }
     let index = 0;
-    for(let i =0;i<=max;i++){
-        while(count[i]>0){
-            arr[index]=i;
-            index++;
-            count[i]--
+    let prefix = new Array(max+1).fill(0);
+    for(let i=0;i<count.length; i++){
+        if(i>0){
+            prefix[i]=prefix[i-1]+count[i]
+        }else{
+            prefix[i]=count[i]
         }
     }
-    return arr
+    console.log(count)
+    console.log(prefix)
+
+  let result = new Array(arr.length).fill(0)
+    for(let i =arr.length-1;i>=0;i--){
+     let x=  prefix[arr[i]]
+     result[x-1] = arr[i]
+
+     prefix[arr[i]]--
+    }
+    return result
 }
 
-console.log(sort([2,5,7,1,3,8,9,3,4,4,4,2,2,5]))
+console.log(sort([4,2,5,3,3,2,1,4]))
