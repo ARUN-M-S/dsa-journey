@@ -14,9 +14,6 @@ function sort(arr){
             prefix[i]=count[i]
         }
     }
-    console.log(count)
-    console.log(prefix)
-
   let result = new Array(arr.length).fill(0)
     for(let i =arr.length-1;i>=0;i--){
      let x=  prefix[arr[i]]
