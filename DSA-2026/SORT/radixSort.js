@@ -5,3 +5,15 @@ function radixSort(arr){
     }
     return arr
 }
+
+function countingSort(arr,e){
+    let count = new Array(9).fill(0);
+    for(let x of arr){
+        let digit = Math.floor(x/e)%10;
+        count[digit]++;
+    }
+
+    for(let i =1;i<count.length;i++){
+        count[i]=count[i]+count[i-1]
+    }
+}
