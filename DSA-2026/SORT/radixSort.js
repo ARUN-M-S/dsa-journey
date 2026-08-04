@@ -16,4 +16,16 @@ function countingSort(arr,e){
     for(let i =1;i<count.length;i++){
         count[i]=count[i]+count[i-1]
     }
+    let sortedArray = new Array(arr.length);
+
+    for(let i =arr.length-1;i>=0;i--){
+        let digit = Math.floor(arr[i]/e)%10;
+        let x= count[digit]
+        sortedArray[x-1] = arr[i]
+        count[digit]--
+    }
+
+    for(let i =0;i<arr.length-1;i++){
+        arr[i]=sortedArray[i]
+    }
 }
