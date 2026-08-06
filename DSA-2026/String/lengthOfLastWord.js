@@ -3,9 +3,7 @@ function findLength(str){
 let count=0
     while(i>=0){
         if(str[i]!=" ")count++;
-        else if(count>0) break;
-        
-        
+        else if(count>0) break; 
         i--
     }
     return count;
