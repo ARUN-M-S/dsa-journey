@@ -3,7 +3,7 @@ function findWordsContaining(str,char){
     for(let i =0;i<str.length;i++){
         for(let j =0;j<str[i].length;j++){
             if(str[i][j]==char){
-                arr.push(i,j);
+                arr.push(i);
                 break
             }
         }
