@@ -1,24 +1,38 @@
 var reverseStr = function (s, k) {
-   
+
     s = s.split('');
-  
-    // Step through the array in blocks of 2k
     for (let i = 0; i < s.length; i += 2 * k) {
-      let left = i;
-      // Reverse up to k characters or remaining length
-      let right = Math.min(i + k - 1, s.length - 1);
-  
-      // Standard two-pointer swap
-      while (left < right) {
-        let temp = s[left];
-        s[left] = s[right];
-        s[right] = temp;
-        left++;
-        right--;
-      }
+        let left = i;
+        let right = Math.min(s.length - 1, i-1+k);
+        console.log(right)
+        while (left < right) {
+            [s[left], s[right]] = [s[right], s[left]];
+            left++;
+            right--;
+        }
+       
     }
-  
-    return s.join('');
-     
-  
-  };
+
+    return s.join('')
+}
+
+var reverseStrJS = function (s, k) {
+let result = ''
+    
+    for (let i = 0; i < s.length; i += 2 * k) {
+     let reverse = s.slice(i,i+k).split('').reverse().join('')
+     console.log(reverse)
+     let rest = s.slice(i+k,i+2*k)
+     console.log(rest)
+     result +=reverse+rest
+     console.log(result)
+       
+    }
+
+    return result
+}
+
+let s = "abcdefg";
+let k = 2
+
+console.log(reverseStrJS(s, k))
