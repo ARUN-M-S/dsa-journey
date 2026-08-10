@@ -8,7 +8,6 @@ function sort(arr){
                 swapped=true
             }
         }
-        
         if(!swapped) break
     }
     return arr
