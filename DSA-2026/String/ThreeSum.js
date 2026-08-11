@@ -1,27 +1,27 @@
 
-function threeSum(arr){
-    arr= arr.sort((a,b)=>a-b);
-    let result =[]
-    for(let i =0;i<=arr.length-3;i++){
-        let left = i+1;
-        let right=arr.length-1;
+function threeSum(arr) {
+    arr = arr.sort((a, b) => a - b);
+    let result = []
+    for (let i = 0; i <= arr.length - 3; i++) {
+        let left = i + 1;
+        let right = arr.length - 1;
 
-        while(left<right){
-            let sum = arr[i]+arr[left]+arr[right];
-            if(sum==0) {
-                result.push([arr[i],arr[left],arr[right]]);
+        while (left < right) {
+            let sum = arr[i] + arr[left] + arr[right];
+            if (sum == 0) {
+                result.push([arr[i], arr[left], arr[right]]);
                 left++;
-    right--;
+                right--;
 
-    // SKIP DUPLICATES for left and right
-    while (left < right && arr[left] === arr[left - 1]) left++;
-    while (left < right && arr[right] === arr[right + 1]) right--;
-            }else if (sum>0){
+                // SKIP DUPLICATES for left and right
+                while (left < right && arr[left] === arr[left - 1]) left++;
+                while (left < right && arr[right] === arr[right + 1]) right--;
+            } else if (sum > 0) {
                 right--
-            }else{
+            } else {
                 left++
             }
-            
+
         }
     }
     return result
