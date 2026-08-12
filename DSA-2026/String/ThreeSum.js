@@ -3,6 +3,7 @@ function threeSum(arr) {
     arr = arr.sort((a, b) => a - b);
     let result = []
     for (let i = 0; i <= arr.length - 3; i++) {
+        if (i > 0 && arr[i] === arr[i - 1]) continue;
         let left = i + 1;
         let right = arr.length - 1;
 
