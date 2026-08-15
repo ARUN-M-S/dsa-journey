@@ -1,4 +1,3 @@
-
 function longestPalindrome(str) {
     let n = str.length;
     if (n <= 1) return str;
