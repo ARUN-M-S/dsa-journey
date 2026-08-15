@@ -34,7 +34,6 @@ var reverseWords = function(s) {
             i--
         }
         result +=word
-
     }
     return result
 }
