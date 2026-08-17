@@ -1,23 +1,27 @@
-function numSubarrayProductLessThanK(arr,k){
-    if (k <= 1) return 0;
-    let left=0;
-    let right = 0;
-    let n = arr.length;
-    let result=[]
-let prdt = 1;
-let count=0;
+function numSubarrayProductLessThanK(arr, k) {
+  if (k <= 1) return 0;
+  let left = 0;
+  let right = 0;
+  let n = arr.length;
+  let result = [];
+  let prdt = 1;
+  let count = 0;
 
-for(let i =0;i<n;i++){
-    prdt*=arr[i];
-    while(prdt>=k && left<=i){
-        prdt/=arr[left];
-        left++
+  for (let i = 0; i < n; i++) {
+    prdt *= arr[i];
+    while (prdt >= k && left <= i) {
+      prdt /= arr[left];
+      left++;
+    }
+    let temp =[];
+    for(let j =i;j>=left;j--){
+        temp.unshift(arr[j]);
+        result.push([...temp])
     }
     count += i - left + 1;
-}
+  }
 
-   return count
- 
+  return result;
 }
 
 console.log(numSubarrayProductLessThanK([10, 5, 2, 6], 100));
