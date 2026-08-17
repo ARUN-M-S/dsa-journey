@@ -13,7 +13,7 @@ for(let i =0;i<n;i++){
         prdt/=arr[left];
         left++
     }
-    count += right - left + 1;
+    count += i - left + 1;
 }
 
    return count
