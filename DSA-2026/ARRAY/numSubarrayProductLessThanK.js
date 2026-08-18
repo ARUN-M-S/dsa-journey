@@ -6,7 +6,6 @@ function numSubarrayProductLessThanK(arr, k) {
   let result = [];
   let prdt = 1;
   let count = 0;
-
   for (let i = 0; i < n; i++) {
     prdt *= arr[i];
     while (prdt >= k && left <= i) {
