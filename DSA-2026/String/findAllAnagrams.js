@@ -28,7 +28,6 @@ function findAnagrams(str1,str2){
             }
             l++;
         }
-        
         r++
         
     }
