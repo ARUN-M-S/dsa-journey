@@ -11,7 +11,6 @@ function longestPalindrome(str){
         return str.slice(left+1,right)
     }
 
-
     for(let i =0;i<n;i++){
         let odd= helper(i,i)
         let even= helper(i,i+1)
