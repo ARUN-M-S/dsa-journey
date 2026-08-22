@@ -2,21 +2,20 @@
 
 function reverseWords(s){
     let result='';
-    let arr=[]
+    let word=''
     for(let i =s.length-1;i>=0;i--){
         if(s[i]==' '){
-            let word = arr.join('')
+            
             result+=word;
             result+=' '
-            console.log(word)
-            arr=[]
+            word=''
         }else{
-            arr.unshift(s[i]);
+           word= s[i]+word
         }
 
 
     }
-    return result+=arr.join('')
+    return result+=word
 }
 
 
