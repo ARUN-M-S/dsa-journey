@@ -12,8 +12,6 @@ function reverseWords(s){
         }else{
            word= s[i]+word
         }
-
-
     }
     return result+=word
 }
