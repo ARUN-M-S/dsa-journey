@@ -18,8 +18,7 @@ function findAnagrams(s,t){
                     valid=false;
 
                     break;
-                }
-                
+                }    
             }
             if(valid) result.push(left)
 
