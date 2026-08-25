@@ -16,7 +16,6 @@ function findAnagrams(s,t){
             for(let key in tMap){
                 if(tMap[key]!=sMap[key]){
                     valid=false;
-
                     break;
                 }    
             }
