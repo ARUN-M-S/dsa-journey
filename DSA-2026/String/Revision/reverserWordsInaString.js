@@ -3,7 +3,6 @@
 //    return s.filter(Boolean).reverse().join(' ')
 //  };
 
-
 // var reverseWords = function(s) {
 //     s = s.split(' ');
 //   let left = 0;
