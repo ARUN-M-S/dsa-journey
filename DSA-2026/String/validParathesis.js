@@ -6,7 +6,7 @@ function validParanthesis(s){
     }
     let stack =[]
     for(let i=0;i<s.length;i++ ){
-        if(Object.keys(pair).includes(s[i])){
+        if(pair[s[i]]){
             stack.push(s[i])
         }else{
             if(pair[stack.pop()]!=s[i]) return false;
