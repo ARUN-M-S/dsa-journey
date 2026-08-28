@@ -13,7 +13,7 @@ function validParanthesis(s){
         }
     }
     console.log(stack)
-return stack.length ==0 ? true:false;
+    return stack.length ==0 ? true:false;
 }
 
 console.log(validParanthesis('()'))
