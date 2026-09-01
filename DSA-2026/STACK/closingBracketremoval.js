@@ -4,18 +4,18 @@ function closingBracket(str){
 for(let i =0;i<str.length;i++){
     if(str[i]=='('){
         stack.push(str[i])
+        if(stack.length>1) ans+=str[i]
     }else {
-        if(stack.length>2){
-            ans=ans+str[i]
-        }
+        if(stack.length>1) ans+=str[i]
         stack.pop()
         
     }
-    if(stack.length>1){
-        ans=ans+str[i] 
-    }
+    
 }
 return ans
 }
 
 console.log(closingBracket('()()((()))'))
+
+
+console.log(closingBracket('(())'))
