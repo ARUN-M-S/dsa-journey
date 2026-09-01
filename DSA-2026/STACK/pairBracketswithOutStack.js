@@ -5,8 +5,7 @@ function pair(str){
         if(char=='('){
             if(depth>0)ans+=char;
             depth++
-        }else{
-            
+        }else{    
             depth--
             if(depth>0)ans+=char;
         }
