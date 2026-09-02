@@ -18,10 +18,9 @@ function reversePolicy(arr) {
             } else if (arr[i] === '*') {
                 ans = a * b;
             } else if (arr[i] === '/') {
-                ans = Math.floor(a / b);
+                ans = Math.trunc(a / b);
             }
 stack.push(ans)
-console.log(stack);
         }
     }
     return stack.pop()
