@@ -6,7 +6,6 @@ var evalRPN = function(arr) {
         '*':(a,b)=>a*b,
         '/':(a,b)=>Math.trunc(a/b)
     }
-
     for(let char of arr){
         if(isNaN(char)){
             let b = stack.pop();
@@ -18,7 +17,6 @@ var evalRPN = function(arr) {
         
     }
     return stack.pop()
-
 
 }
 
