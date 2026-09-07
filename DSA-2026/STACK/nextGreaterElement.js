@@ -21,7 +21,6 @@ var nextGreaterElement = function (nums1, nums2) {
             obj[nums2[i]] = -1
         }
         stack.push(nums2[i])
-
     }
     let result = []
     for (let i = 0; i < nums1.length; i++) {
