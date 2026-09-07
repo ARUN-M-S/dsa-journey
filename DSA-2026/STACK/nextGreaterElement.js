@@ -23,7 +23,6 @@ var nextGreaterElement = function (nums1, nums2) {
         stack.push(nums2[i])
 
     }
-
     let result = []
     for (let i = 0; i < nums1.length; i++) {
         result.push(obj[nums1[i]])
