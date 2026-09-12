@@ -4,7 +4,6 @@ var MyStack = function() {
     this.q2=[]
     
 };
-
 /** 
  * @param {number} x
  * @return {void}
