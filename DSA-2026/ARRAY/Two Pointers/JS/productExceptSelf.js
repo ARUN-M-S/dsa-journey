@@ -10,9 +10,7 @@ var productExceptSelf = function(nums) {
     }
 for(let i =0;i<n;i++){
         sufix[i] = sufix[i] * prefix[i]
-    }
-return sufix
-
+    }return sufix
 
 
 };
